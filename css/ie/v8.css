@@ -1,41 +1,70 @@
 /*
-	Twenty by HTML5 UP
+	Miniport by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-/* Section/Article */
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
 
-	section > .last-child,
-	article > .last-child {
-		margin-bottom: 0;
+	form input[type=text],
+	form input[type=password],
+	form select,
+	form textarea,
+	input[type="button"],
+	input[type="submit"],
+	input[type="reset"],
+	.button,
+	#top .image,
+	#top .image img,
+	#nav a
+	{
+		position: relative;
+		-ms-behavior: url('css/ie/PIE.htc');
 	}
 
-	section.last-child,
-	article.last-child {
-		margin-bottom: 0;
-	}
-
-/* Banner */
-
-	#banner {
-		background-image: url("../../images/banner.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: auto;
-		-ms-behavior: url("css/ie/backgroundsize.min.htc");
-	}
-
-		#banner .inner {
-			background: #341b2b;
+	/* Section/Article */
+	
+		section > .last-child,
+		article > .last-child
+		{
+			margin-bottom: 0;
 		}
 
-/* CTA  */
+		section.last-child,
+		article.last-child
+		{
+			margin-bottom: 0;
+		}
+		
+	/* Box */
 
-	#cta {
-		background-image: url("../../images/banner.jpg");
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position: auto;
-		-ms-behavior: url("css/ie/backgroundsize.min.htc");
+		.box
+		{
+			border: solid 1px #ddd;
+		}
+
+	/* List */
+
+		ul.social li a
+		{
+			position: relative;
+			top: 0 !important;
+			overflow: hidden;
+			-ms-behavior: url('css/ie/PIE.htc');
+		}
+
+			ul.social li a:before
+			{
+				background: none;
+			}
+
+/*********************************************************************************/
+/* Wrappers                                                                      */
+/*********************************************************************************/
+
+	.wrapper
+	{
+		border-top: solid 1px #ddd;
 	}
