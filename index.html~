@@ -152,13 +152,13 @@
                         <!-- end menu block (portfolio) -->
 
                         <!-- start menu block (blog) -->
-                        <a href="blog.html" class="menu-li">
+                        <a href="publications.html" class="menu-li">
                             <!-- img menu block -->
                             <span class="foto">
                                 <img src="./assets/img/menu/blog.png" class="menu-img" data-img-name="blog" alt="Ukieweb">
                             </span>
                             <!-- name menu block -->
-                            <span class="name">Blog</span>
+                            <span class="name">Publications</span>
                         </a>
                         <!-- end menu block (portfolio) -->
 

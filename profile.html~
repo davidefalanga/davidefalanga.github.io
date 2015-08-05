@@ -90,27 +90,27 @@
                         <table>
                             <tr>
                                 <td class="font-weight-m">Name</td>
-                                <td class="text-right">John Doe</td>
+                                <td class="text-right">Davide Falanga</td>
                             </tr>
                             <tr>
                                 <td class="font-weight-m">Date of birth</td>
-                                <td class="text-right">November 24, 1990</td>
+                                <td class="text-right">November 1, 1989</td>
                             </tr>
                             <tr>
                                 <td class="font-weight-m">E-mail</td>
-                                <td class="text-right"><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></td>
+                                <td class="text-right"><a href="mailto:falanga@ifi.uzh.ch">falanga@ifi.uzh.ch</a></td>
                             </tr>
                             <tr>
                                 <td class="font-weight-m">Address</td>
-                                <td class="text-right">144 King St, Melbourne VIC</td>
+                                <td class="text-right">Andreasstrasse 15, 8050 Zurich</td>
                             </tr>
                             <tr>
                                 <td class="font-weight-m">Phone</td>
-                                <td class="text-right"><a href="tel:01234567890">012-3456-7890</a></td>
+                                <td class="text-right"><a href="tel:041446354575">+41 44 635 45 75</a></td>
                             </tr>
                             <tr>
                                 <td class="font-weight-m">Website</td>
-                                <td class="text-right"><a href="www.themeforest.net">www.themeforest.net</a></td>
+                                <td class="text-right"><a href="www.davidefalanga.com">www.davidefalanga.com</a></td>
                             </tr>
                         </table>
                     </div>
@@ -322,32 +322,32 @@
         <div class="container">
             <!-- start row -->
             <div class="row">
-                <!-- start phone number -->
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                    <a href="#" class="hover-animate">
-                        <span class="ukie-icons hover-animate"><i class="fa fa-phone"></i></span> +38 012-3456-7890
-                    </a>
-                </div>
-                <!-- end phone number -->
-                <!-- start email -->
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                    <a href="#" class="hover-animate">
-                        <span class="ukie-icons hover-animate"><i class="fa fa-paper-plane"></i></span> info@yourdomain.com
-                    </a>
-                </div>
-                <!-- end email -->
-                <!-- start address -->
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                    <a href="#" class="hover-animate">
-                        <span class="ukie-icons hover-animate"><i class="fa fa-map-marker"></i></span> 44 King St, Melbourne VIC
-                    </a>
-                </div>
-                <!-- end address -->
-                <!-- start Copyright -->
-                <div class="col-xs-12 col-sm-6 col-lg-3 text-right">
-                    <span class="copyright">Copyright © 2015 All right reserved</span>
-                </div>
-                <!-- end Copyright -->
+                    <!-- start phone number -->
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <a href="#" class="hover-animate">
+                            <span class="ukie-icons hover-animate"><i class="fa fa-phone"></i></span> +41 44 635 45 75
+                        </a>
+                    </div>
+                    <!-- end phone number -->
+                    <!-- start email -->
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <a href="mailto:falanga@ifi.uzh.ch" class="hover-animate">
+                            <span class="ukie-icons hover-animate"><i class="fa fa-paper-plane"></i></span> falanga@ifi.uzh.ch
+                        </a>
+                    </div>
+                    <!-- end email -->
+                    <!-- start address -->
+                    <div class="col-xs-12 col-sm-6 col-lg-3">
+                        <a href="#" class="hover-animate">
+                            <span class="ukie-icons hover-animate"><i class="fa fa-map-marker"></i></span> Andreasstrasse 15, 8050 Zurich
+                        </a>
+                    </div>
+                    <!-- end address -->
+                    <!-- start Copyright  -->
+                    <div class="col-xs-12 col-sm-6 col-lg-3 text-right">
+                        <span class="copyright">Copyright © 2015 All right reserved</span>
+                    </div>
+                    <!-- end Copyright -->
             </div>
             <!-- end row -->
         </div>
