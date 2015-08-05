@@ -90,27 +90,27 @@
                         <table>
                             <tr>
                                 <td class="font-weight-m">Name</td>
-                                <td class="text-right">Davide Falanga</td>
+                                <td class="text-right">John Doe</td>
                             </tr>
                             <tr>
                                 <td class="font-weight-m">Date of birth</td>
-                                <td class="text-right">November 1, 1989</td>
+                                <td class="text-right">November 24, 1990</td>
                             </tr>
                             <tr>
                                 <td class="font-weight-m">E-mail</td>
-                                <td class="text-right"><a href="mailto:falanga@ifi.uzh.ch">falanga@ifi.uzh.ch</a></td>
+                                <td class="text-right"><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></td>
                             </tr>
                             <tr>
                                 <td class="font-weight-m">Address</td>
-                                <td class="text-right">Andreasstrasse 15, 8050 Zurich</td>
+                                <td class="text-right">144 King St, Melbourne VIC</td>
                             </tr>
                             <tr>
                                 <td class="font-weight-m">Phone</td>
-                                <td class="text-right"><a href="tel:041446354575">+41 44 635 45 75</a></td>
+                                <td class="text-right"><a href="tel:01234567890">012-3456-7890</a></td>
                             </tr>
                             <tr>
                                 <td class="font-weight-m">Website</td>
-                                <td class="text-right"><a href="www.davidefalanga.com">www.davidefalanga.com</a></td>
+                                <td class="text-right"><a href="www.themeforest.net">www.themeforest.net</a></td>
                             </tr>
                         </table>
                     </div>

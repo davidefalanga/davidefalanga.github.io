@@ -8,9 +8,8 @@
 <head>
     <meta charset="utf-8" />
     <title>Home | ukieCard</title>
-    <meta name="author" content="ukieweb" />
-    <meta name="keywords" content="ukieCard, css3, template, html5 template" />
-    <meta name="description" content="ukieCard - Personal Vcard & Resume HTML Template" />
+    <meta name="author" content="Davide Falanga" />
+    <meta name="description" content="Davide Falanga" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <!-- Font Awesome -->
     <link type="text/css" media="all" href="assets/fonts/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -56,7 +55,7 @@
                         <!-- Your foto -->
                         <div class="foto">
                             <!-- for man -->
-                            <img src="./assets/img/photo.png" alt="Ukieweb">
+                            <img src="./assets/img/photo.jpeg" alt="Me">
                             <!-- for women -->
                             <!-- <img src="./assets/img/photo_female.png" alt="Ukieweb"> -->
                         </div>
@@ -64,9 +63,9 @@
                     </div>
                     <div class="col-xs-12 col-sm-7 col-lg-7">
                         <!-- Your Name -->
-                        <h1 class="title">Jonh Doe</h1>
+                        <h1 class="title">Davide Falanga</h1>
                         <!-- Your Profession -->
-                        <h3 class="sub-title">Web Designer & Mobile Application Developer</h3>
+                        <h3 class="sub-title">PhD Student at the Robotics and Perception Group</h3>
                         <!-- social icon -->
                         <div class="social">
                             <ul class="animated" data-animation="fadeIn" data-animation-delay="600">
@@ -142,13 +141,13 @@
                         <!-- end menu block (resume) -->
 
                         <!-- start menu block (portfolio) -->
-                        <a href="portfolio.html" class="menu-li">
+                        <a href="projects.html" class="menu-li">
                             <!-- img menu block -->
                             <span class="foto">
                                 <img src="./assets/img/menu/portfolio.png" class="menu-img" data-img-name="portfolio" alt="Ukieweb">
                             </span>
                             <!-- name menu block -->
-                            <span class="name">Portfolio</span>
+                            <span class="name">Projects</span>
                         </a>
                         <!-- end menu block (portfolio) -->
 
@@ -190,29 +189,29 @@
                     <!-- start phone number -->
                     <div class="col-xs-12 col-sm-6 col-lg-3">
                         <a href="#" class="hover-animate">
-                            <span class="ukie-icons hover-animate"><i class="fa fa-phone"></i></span> +38 012-3456-7890
+                            <span class="ukie-icons hover-animate"><i class="fa fa-phone"></i></span> +41 44 635 45 75
                         </a>
                     </div>
                     <!-- end phone number -->
                     <!-- start email -->
                     <div class="col-xs-12 col-sm-6 col-lg-3">
-                        <a href="#" class="hover-animate">
-                            <span class="ukie-icons hover-animate"><i class="fa fa-paper-plane"></i></span> info@yourdomain.com
+                        <a href="mailto:falanga@ifi.uzh.ch" class="hover-animate">
+                            <span class="ukie-icons hover-animate"><i class="fa fa-paper-plane"></i></span> falanga@ifi.uzh.ch
                         </a>
                     </div>
                     <!-- end email -->
                     <!-- start address -->
                     <div class="col-xs-12 col-sm-6 col-lg-3">
                         <a href="#" class="hover-animate">
-                            <span class="ukie-icons hover-animate"><i class="fa fa-map-marker"></i></span> 44 King St, Melbourne VIC
+                            <span class="ukie-icons hover-animate"><i class="fa fa-map-marker"></i></span> Andreasstrasse 15, 8050 Zurich
                         </a>
                     </div>
                     <!-- end address -->
-                    <!-- start Copyright -->
+                    <!-- start Copyright 
                     <div class="col-xs-12 col-sm-6 col-lg-3 text-right">
                         <span class="copyright">Copyright © 2015 All right reserved</span>
                     </div>
-                    <!-- end Copyright -->
+                    end Copyright -->
                 </div>
                 <!-- end row -->
             </div>
