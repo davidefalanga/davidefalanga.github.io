@@ -70,12 +70,12 @@
                         <div class="social">
                             <ul class="animated" data-animation="fadeIn" data-animation-delay="600">
                                 <!-- social icons -->
-                                <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-linkedin"></i></a></li>
-                                <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-dribbble"></i></a></li>
-                                <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-youtube"></i></a></li>
+                                <!--<li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-facebook"></i></a></li>-->
+                                <!--<li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-twitter"></i></a></li>-->
+                                <li><a class="ukie-icons hover-animate" href="https://href.li/?http://www.linkedin.com/in/dfalanga"><i class="fa fa-linkedin"></i></a></li>
+                                <!--<li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-google-plus"></i></a></li>-->
+                                <!--<li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-dribbble"></i></a></li>-->
+                                <!--<li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-youtube"></i></a></li>-->
                                 <!--
                                     <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-behance"></i></a></li>
                                     <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-pinterest"></i></a></li>
@@ -152,15 +152,15 @@
                         <!-- end menu block (portfolio) -->
 
                         <!-- start menu block (blog) -->
-                        <a href="publications.html" class="menu-li">
-                            <!-- img menu block -->
-                            <span class="foto">
-                                <img src="./assets/img/menu/blog.png" class="menu-img" data-img-name="blog" alt="Ukieweb">
-                            </span>
-                            <!-- name menu block -->
-                            <span class="name">Publications</span>
-                        </a>
-                        <!-- end menu block (portfolio) -->
+                       <!-- <a href="publications.html" class="menu-li">-->
+                       <!--     <!-- img menu block --> -->
+                        <!--    <span class="foto">-->
+                        <!--        <img src="./assets/img/menu/blog.png" class="menu-img" data-img-name="blog" alt="Ukieweb">-->
+                        <!--    </span>-->
+                        <!--    <!-- name menu block -->-->
+                        <!--    <span class="name">Publications</span>-->
+                        <!--</a>-->
+                        <!-- end menu block (portfolio) -->-->
 
                         <!-- start menu block (contact) -->
                         <a href="contact.html" class="menu-li">
@@ -203,15 +203,15 @@
                     <!-- start address -->
                     <div class="col-xs-12 col-sm-6 col-lg-3">
                         <a href="#" class="hover-animate">
-                            <span class="ukie-icons hover-animate"><i class="fa fa-map-marker"></i></span> Andreasstrasse 15, 8050 Zurich
+                            <span class="ukie-icons hover-animate"><i class="fa fa-map-marker"></i></span> Andreasstr. 15, 8050 Zurich
                         </a>
                     </div>
                     <!-- end address -->
-                    <!-- start Copyright 
+                    <!-- start Copyright  -->
                     <div class="col-xs-12 col-sm-6 col-lg-3 text-right">
                         <span class="copyright">Copyright © 2015 All right reserved</span>
                     </div>
-                    end Copyright -->
+                    <!-- end Copyright -->
                 </div>
                 <!-- end row -->
             </div>

@@ -6,7 +6,7 @@
     $message = ( $_REQUEST['user-message'] ) ? $_REQUEST['user-message'] : '';
     $status = $_REQUEST['user-status'];
 
-    $to = 'falanga@ifi.uzh.ch';
+    $to = 'youremail@domain.com';
     $message = 'Name: '.$name.'<br /> Email: '.$email.'<br />Message: '.$message;
 
     $subject = 'Subject';
