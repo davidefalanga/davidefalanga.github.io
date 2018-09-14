@@ -1,266 +1,218 @@
-﻿<!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en"> <!--<![endif]-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Home | Davide Falanga</title>
-    <meta name="author" content="Davide Falanga" />
-    <meta name="description" content="Davide Falanga" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <!-- Font Academic Icons -->
-    <link type="text/css" media="all" href="assets/fonts/academic-icons-1.5/academicons.css" rel="stylesheet" />
-    <!-- Font Awesome -->
-    <link type="text/css" media="all" href="assets/fonts/font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet" />
-    <!-- Libs CSS -->
-    <link type="text/css" media="all" href="assets/boostrap-files/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Animate CSS -->
-    <link type="text/css" media="all" href="assets/css/animate.css" rel="stylesheet" />
-    <!-- Template CSS -->
-    <link type="text/css" media="all" href="assets/css/style.css" rel="stylesheet" />
-    <!-- Switcher CSS -->
-    <link type="text/css" media="all" href="assets/css/switcher.css" rel="stylesheet" />
-    <link href="assets/css/colour-scheme/color-blue.css" rel="stylesheet" type="text/css" data-color="color-blue" media="all" id="stylesheet-new">
-    <!-- Responsive CSS -->
-    <link type="text/css" media="all" href="assets/css/respons.css" rel="stylesheet" />
-    <!-- Style Switcher -->
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon" href="assets/img/favicons/apple-touch-icon.png" />
-    <link rel="shortcut icon" href="assets/img/favicons/favicon.png" />
-    <!-- Google Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
+
+<title>Davide Falanga- PhD Student in Robotics</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Alegreya|Cormorant|Fira+Sans|Fira+Sans+Condensed|Fira+Sans+Extra+Condensed|Lato|Noto+Serif|Open+Sans|Open+Sans+Condensed:300|Roboto|Roboto+Condensed|Roboto+Slab|Slabo+27px" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css" type="text/css" media="all" />
+
+
+<meta name="Author" content="Davide Falanga">
+<meta name="Description" content="Web Page of Davide Falanga">
+
+<script>
+
+    /* Light YouTube Embeds by @labnol */
+    /* Web: http://labnol.org/?p=27941 */
+
+    document.addEventListener("DOMContentLoaded",
+        function() {
+            var div, n,
+                v = document.getElementsByClassName("youtube-player");
+            for (n = 0; n < v.length; n++) {
+                div = document.createElement("div");
+                div.setAttribute("data-id", v[n].dataset.id);
+                div.innerHTML = labnolThumb(v[n].dataset.id);
+                div.onclick = labnolIframe;
+                v[n].appendChild(div);
+            }
+        });
+
+    function labnolThumb(id) {
+        var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
+            play = '<div class="play"></div>';
+        return thumb.replace("ID", id) + play;
+    }
+
+    function labnolIframe() {
+        var iframe = document.createElement("iframe");
+        var embed = "https://www.youtube.com/embed/ID?autoplay=1";
+        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+        iframe.setAttribute("frameborder", "0");
+        iframe.setAttribute("allowfullscreen", "1");
+        this.parentNode.replaceChild(iframe, this);
+    }
+
+</script>
+
 
 </head>
+
 <body>
 
-    <!-- Load page -->
-    <div class="animationload">
-        <div class="loader"></div>
-    </div>
-    <!-- End load page -->
+	<div id="wrapper">
 
-    <div id="wraper">
+		<div id="header">
+			<div id="my_img">
+				<img src ="img/me.jpg" width="100px" class="roundcorner">
+			</div>
+			<h1>Davide Falanga</h1>   
+			<h2> - PhD Student in Robotics</h2>
+			<br />
+			<div id="address">
+				<p>Robotics and Perception Group<br />
+				University of Zurich<br />
+				Andreasstrasse 15<br />
+				8050 Zurich</p>
+			</div>
+			
+			<div id="contact">
+				<p>Email: <a href="emailto:falanga@ifi.uzh.ch">falanga@ifi.uzh.ch</a></p>
+				Phone: +41 44 635 43 42<br />
+				<a href="https://www.linkedin.com/in/dfalanga">LinkedIn</a><br />
+				<a href="https://scholar.google.it/citations?user=gYXvxhQAAAAJ">Google Scholar</a></p>
+			</div>	
 
-        <!-- Start Home-header section -->
-        <section class="home-header border-bottom padding-block">
-            <!-- start container -->
-            <div class="container">
-                <!-- start row -->
-                <div class="row">
-                    <div class="col-xs-12 col-sm-5 col-lg-5 text-right">
-                        <!-- Your foto -->
-                        <div class="foto">
-                            <!-- for man -->
-                            <img src="./assets/img/photo.jpeg" alt="Me">
-                            <!-- for women -->
-                            <!-- <img src="./assets/img/photo_female.png" alt="Ukieweb"> -->
-                        </div>
-                        <!-- end your foto -->
-                    </div>
-                    <div class="col-xs-12 col-sm-7 col-lg-7">
-                        <!-- Your Name -->
-                        <h1 class="title">Davide Falanga</h1>
-                        <!-- Your Profession -->
-                        <h3 class="sub-title">PhD Student at the Robotics and Perception Group</h3>
-                        <!-- social icon -->
-                        <div class="social">
-                            <ul class="animated" data-animation="fadeIn" data-animation-delay="600">
-                                <!-- social icons -->
-                                <li><a class="ukie-icons hover-animate" href="http://www.linkedin.com/in/dfalanga"><i class="fa fa-linkedin"></i></a></li>   <!-- Linkedin -->
-                                <!--<li><a class="ukie-icons hover-animate" href="http://www.linkedin.com/in/dfalanga"><i class="ai ai-google-scholar"></i></a></li>-->   <!-- Google Scholar -->
-                                <li><a class="ukie-icons hover-animate" href="https://www.youtube.com/user/ailabRPG"><i class="fa fa-youtube"></i></a></li>    <!-- RPG YouTube Channel -->
+			<br style="clear: left;" />
+		</div>
+		
+			
+		
+		<div id="body">
+			<div id="bio">
+				<h2>About Me</h2>
+				<p>I joined the <a href="http://rpg.ifi.uzh.ch">Robotics and Perception Group</a> in 2015 and I am currently pursuing a Ph.D. in motion planning and control for Micro Aerial Vechiles, under the supervision of <a href="http://rpg.ifi.uzh.ch/people_scaramuzza.html">Prof. Davide Scaramuzza</a>. My background is in Robotics and Control Systems, as I got a B.Sc. and a M.Sc in Automation Engineering from University of Naples &#8220;Federico II&#8221;, with focus on dynamical systems, robotics and control.</p>
+				<p>I am interested in building autonomous, intelligent machines able to navigate by themselves using only onboard sensing and computing. I believe that autonomous robots have the potential of dramatically change and improve our society. My research interests lie at the intersection between perception and action. More specifically, I am investigating techniques to exploit motion planning and control to cope with the limitations of onboard sensors for high-speed flight with small-scale, lightweight, vision-based autonomous quadrotors. Check out my <a href="#publications">publications</a> for further details.</p>
+				<p>Drop me an email at <a href="emailto:falanga@ifi.uzh.ch">falanga@ifi.uzh.ch</a> if you want to get in touch, or check out my profiles on <a href="https://www.linkedin.com/in/dfalanga/"> LinkedIn </a> and <a href="https://scholar.google.it/citations?user=gYXvxhQAAAAJ"> Google Scholar</a>.
+			</div>
 
-                            </ul>
-                        </div>
-                        <!-- end social icon -->
-                    </div>
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end container -->
-        </section>
-        <!-- End Home-header section -->
+			<div id="education">
+				<h2>Education</h2>
+				<ol>
+					<li>
+						<strong>Ph.D. in Robotics</strong> - University of Zurich <br />
+						[2015-Present] Motion Planning and Control for Vision-based Micro Aerial Vehicles. 
+					</li>
+					<li>
+						<strong>M.Sc. in Automation Engineering</strong> - University of Naples &#8220;Federico II&#8221; <br />
+						[2012-2015] Robotics, Systems and Control - Summa cum Laude.
+					</li>
+					<li>
+						<strong>B.Sc. in Automation Engineering</strong> - University of Naples &#8220;Federico II&#8221; <br />
+						[2008-2012] Dynamical Systems and Control.
+					</li>
+				</ol>
+			</div>
 
-        <!-- Start Menu section -->
-        <nav class="menu">
-            <!-- start container -->
-            <div class="container">
-                <!-- start row -->
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-lg-12">
+			<div id="publications">
+				<h2>Publications</h2>
+				<h3>Peer-reviewed Journal Papers</h3>
+				<ol>
 
-                        <!-- start menu block (profile) -->
-                        <a href="profile.html" class="menu-li">
-                            <!-- img menu block -->
-                            <span class="foto">
-                                <!-- for man -->
-                                <img src="./assets/img/menu/profile.png" class="menu-img" data-img-name="profile" alt="Ukieweb" />
-                                <!-- for women -->
-                                <!--  <img src="./assets/img/menu/profile_female.png" class="menu-img" data-img-name="profile_female" alt="Ukieweb" /> -->
-                            </span>
-                            <!-- name menu block -->
-                            <span class="name">Profile</span>
-                        </a>
-                        <!-- end menu block (profile) -->
+					<li>
+						<img src="img/quad.jpg" class="alignleft roundcorner" width="175px" />
+						M. Faessler, <span style="text-decoration: underline;">D. Falanga</span>, D. Scaramuzza<br />
+						<strong>Thrust Mixing, Saturation, and Body-Rate Control for Accurate Aggressive Quadrotor Flight</strong><br />
+						IEEE Robotics and Automation Letters (RA-L), 2017<br />
+						[<a href="http://rpg.ifi.uzh.ch/docs/RAL17_Faessler.pdf">PDF</a>]
+						[<a href="https://youtu.be/6YEMxFgToyg">Video</a>]
+						[<a href="http://rpg.ifi.uzh.ch/docs/RAL17_Faessler.pptx">PPT</a>]
+						[<a href="https://github.com/uzh-rpg/rpg_quadrotor_control">Code</a>]
+						[<a href="http://dfalanga.me/wp-content/uploads/2018/07/Faessler17RAL.bib">BibTex</a>]
+					</li>
 
-                        <!-- start menu block (resume) -->
-                        <a href="resume.html" class="menu-li">
-                            <!-- img menu block -->
-                            <span class="foto">
-                                <img src="./assets/img/menu/resume.png" class="menu-img" data-img-name="resume" alt="Ukieweb">
-                            </span>
-                            <!-- name menu block -->
-                            <span class="name">Resume</span>
-                        </a>
-                        <!-- end menu block (resume) -->
+					<li><img src="img/RAL18_Kim.png" class="alignleft roundcorner" width="175px" />
+						S. Kim, <span style="text-decoration: underline;">D. Falanga</span>, D. Scaramuzza<br />
+						<strong>Computing The Forward Reachable Set for a Multirotor Under First-Order Aerodynamic Effects</strong><br />
+						IEEE Robotics and Automation Letters (RA-L), 2018<br />
+						[<a href="http://rpg.ifi.uzh.ch/docs/RAL18_Kim.pdf">PDF</a>]
+						[<a href="http://dfalanga.me/wp-content/uploads/2018/07/Kim18ral.bib">BibTex</a>]
+					</li>
+				</ol>
+				<h3>Peer-reviewed Conference Papers</h3>
+				<ol>
+					<li><img src="img/ICRA17_Falanga.jpg" class="alignleft roundcorner" width="175px" />
+						<span style="text-decoration: underline;">D. Falanga</span>, E. Mueggler, M. Faessler, D. Scaramuzza<br />
+						<strong>Aggressive Quadrotor Flight through Narrow Gaps with Onboard Sensing and Computing using Active Vision</strong><br />
+						IEEE International Conference on Robotics and Automation (ICRA), Singapore, 2017<br />
+						[<a href="http://rpg.ifi.uzh.ch/docs/ICRA17_Falanga.pdf">PDF</a>]
+						[<a href="https://www.youtube.com/watch?v=meSItatXQ7M">Video</a>]
+						[<a href="http://rpg.ifi.uzh.ch/docs/ICRA17_Falanga.pptm">PPT</a>] 
+						[<a href="http://dfalanga.me/wp-content/uploads/2018/07/Falanga17icra.bib">BibTex</a>]
+					</li>
 
-                        <!-- start menu block (portfolio) -->
-                        <!--<a href="projects.html" class="menu-li"> -->
-                            <!-- img menu block -->
-                        <!--    <span class="foto"> -->
-                        <!--       <img src="./assets/img/menu/portfolio.png" class="menu-img" data-img-name="portfolio" alt="Ukieweb"> -->
-                        <!--    </span> -->
-                            <!-- name menu block -->
-                        <!--    <span class="name">Projects</span> -->
-                        <!--</a> -->
-                        <!-- end menu block (portfolio) -->
+					<li><img src="img/RSS17_Foehn.jpg" class="alignleft roundcorner" width="175px" />
+						P. Foehn, <span style="text-decoration: underline;">D. Falanga</span>, N. Kuppuswamy, R. Tedrake, D. Scaramuzza<br />
+						<strong>Fast Trajectory Optimization for Agile Quadrotor Maneuvers with a Cable-Suspended Payload</strong><br />
+						Robotics: Science and Systems (RSS), Boston, 2017 <a href="http://www.roboticsfoundation.org/index.php/awards"><span style="color: #ee0000;"><strong>Best Student Paper Award Finalist</strong></span></a><br />
+						[<a href="http://rpg.ifi.uzh.ch/docs/RSS17_Foehn.pdf" >PDF</a>]
+						[<a href="https://www.youtube.com/watch?v=s9zb5MRXiHA">Video</a>]
+						[<a href="http://rpg.ifi.uzh.ch/docs/RSS17_Foehn.pptx">PPT</a>]
+						[<a href="http://dfalanga.me/wp-content/uploads/2018/07/Foehn2017rss.bib">BibTex</a>]
+					</li>
 
-                        <!-- start menu block (blog) -->
-                       <!-- <a href="publications.html" class="menu-li">-->
-                       <!--     <!-- img menu block -->
-                        <!--    <span class="foto">-->
-                        <!--        <img src="./assets/img/menu/blog.png" class="menu-img" data-img-name="blog" alt="Ukieweb">-->
-                        <!--    </span>-->
-                        <!--    <!-- name menu block -->
-                        <!--    <span class="name">Publications</span>-->
-                        <!--</a>-->
-                        <!-- end menu block (portfolio) -->
+					<li><img src="img/SSRR17_Falanga.png" class="alignleft roundcorner" width="175px" />
+						<span style="text-decoration: underline;">D. Falanga</span>, A. Zanchettin, A. Simovic, J. Delmerico, D. Scaramuzza<br />
+						<strong>Vision-based Autonomous Quadrotor Landing on a Moving Platform</strong><br />
+						IEEE/RSJ International Symposium on Safety, Security and Rescue Robotics (SSRR), Shanghai, 2017<br />
+						[<a href="http://rpg.ifi.uzh.ch/docs/SSRR17_Falanga.pdf" >PDF</a>]
+						[<a href="https://youtu.be/Tz5ubwoAfNE">Video</a>]
+						[<a href="http://rpg.ifi.uzh.ch/docs/SSRR17_Falanga.pptx">PPT</a>]
+						[<a href="http://dfalanga.me/wp-content/uploads/2018/07/Falanga17ssrr.bib">BibTex</a>]
+					</li>
 
-                        <!-- start menu block (contact) -->
-                        <a href="contact.html" class="menu-li">
-                            <!-- img menu block -->
-                            <span class="foto">
-                                <img src="./assets/img/menu/contact.png" class="menu-img" data-img-name="contact" alt="Ukieweb">
-                            </span>
-                            <!-- name menu block -->
-                            <span class="name">Contact</span>
-                        </a>
-                        <!-- end menu block (contact) -->
-                    </div>
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end container -->
-        </nav>
-        <!-- End Menu section -->
+					<li><img src="img/uav_game.jpg" class="alignleft roundcorner" width="175px" />
+						R. Spica, <span style="text-decoration: underline;">D. Falanga</span>, E. Cristofalo, E. Montijano, D. Scaramuzza, M. Schwager<br />
+						<strong>A Game Theoretic Approach to Autonomous Two-Player Drone Racing</strong><br />
+						Robotics: Science and Systems (RSS), Pittsburgh, 2018<br />
+						[<a href="http://rpg.ifi.uzh.ch/docs/RSS18_Spica.pdf" >PDF</a>]
+						[<a href="https://msl.stanford.edu/game-theoretic-planning-autonomous-drone-racing">Video</a>]
+						[<a href="http://dfalanga.me/wp-content/uploads/2018/07/Spica18rss.bib">BibTex</a>]
+					</li>
 
-        <!-- Start Footer section -->
-        <footer class="footer">
-            <!-- start container -->
-            <div class="container">
-                <!-- start row -->
-                <div class="row">
-                    <!-- start phone number -->
-                    <div class="col-xs-12 col-sm-6 col-lg-3">
-                        <a href="#" class="hover-animate">
-                            <span class="ukie-icons hover-animate"><i class="fa fa-phone"></i></span> +41 44 635 45 75
-                        </a>
-                    </div>
-                    <!-- end phone number -->
-                    <!-- start email -->
-                    <div class="col-xs-12 col-sm-6 col-lg-3">
-                        <a href="mailto:falanga@ifi.uzh.ch" class="hover-animate">
-                            <span class="ukie-icons hover-animate"><i class="fa fa-paper-plane"></i></span> falanga@ifi.uzh.ch
-                        </a>
-                    </div>
-                    <!-- end email -->
-                    <!-- start address -->
-                    <div class="col-xs-12 col-sm-6 col-lg-3">
-                        <a href="#" class="hover-animate">
-                            <span class="ukie-icons hover-animate"><i class="fa fa-map-marker"></i></span> Andreasstr. 15, 8050 Zurich
-                        </a>
-                    </div>
-                    <!-- end address -->
-                    <!-- start Copyright  -->
-                    <div class="col-xs-12 col-sm-6 col-lg-3 text-right">
-                        <span class="copyright">Copyright © 2015 All right reserved</span>
-                    </div>
-                    <!-- end Copyright -->
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end container -->
-        </footer>
-        <!-- End Footer section -->
+					<li><img src="img/IROS18_Falanga.png" class="alignleft roundcorner" width="175px" />
+						<span style="text-decoration: underline;">D. Falanga</span>, P. Foehn, P. Lu, D. Scaramuzza<br />
+						<strong>PAMPC: Perception-Aware Model Predictive Control for Quadrotors</strong><br />
+						IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Madrid, 2018<br />
+						[<a href="http://rpg.ifi.uzh.ch/docs/IROS18_Falanga.pdf" >PDF</a>]
+						[<a href="https://www.youtube.com/watch?v=9vaj829vE18">Video</a>]
+						[<a href="https://github.com/uzh-rpg/rpg_mpc">Code</a>]
+						[<a href="http://dfalanga.me/wp-content/uploads/2018/07/Falanga18iros.bib">BibTex</a>]
+					</li>
+				</ol>
+			</div>
 
-    </div>
+			<div id="videos">
+				<h2>Videos</h2>
+				<h3>Aggressive Quadrotor Flight through Narrow Gaps with Onboard Sensing and Computing using Active Vision</h3>
+				<div class="youtube-player" data-id="meSItatXQ7M"></div>
 
-    <!-- Scroll to Top -->
-    <a href="#" class="btn scrollToTop"><i class="fa fa-angle-up"></i></a>
-    <!-- End Scroll to Top -->
+				<h3>PAMPC: Perception-Aware Model Predictive Control for Quadrotors</h3>
+				<div class="youtube-player" data-id="9vaj829vE18"></div>
 
-    <!-- Style Switcher -->
-    <!-- delete this from site once you have decided on a colour scheme - follow documentation for insructions -->
-    <div class="style-switcher style-off">
+				<h3>Thrust Mixing, Saturation, and Body-Rate Control for Accurate Aggressive Quadrotor Fligh</h3>
+				<div class="youtube-player" data-id="6YEMxFgToyg"></div>
 
-            <div class="row">
-                <div class="col-xs-12 col-sm-12 col-lg-12 text-center">
+				<h3>Fast Trajectory Optimization for Agile Quadrotor Maneuvers with a Cable-Suspended Payload
+</h3>
+				<div class="youtube-player" data-id="s9zb5MRXiHA"></div>
 
-                    <div class="switch-colours clearfix">
-                        <div class="set clearfix">
+				<h3>Vision-based Autonomous Quadrotor Landing on a Moving Platform</h3>
+				<div class="youtube-player" data-id="Tz5ubwoAfNE"></div>
 
-                            <h3 class="lighter">Select A Color</h3>
+				<h3>A Game Theoretic Approach to Autonomous Two-Player Drone Racing</h3>
+				<div class="youtube-player" data-id="cJW1RysDKDg"></div>
+				
 
-                            <a href="color-blue" class="new-colour color-blue" id="color-blue" data-color="#00b6f9"></a>
-                            <a href="color-orange" class="new-colour color-orange" id="color-orange" data-color="#ffc400"></a>
-                            <a href="color-purple" class="new-colour color-purple" id="color-purple" data-color="#7c4dff"></a>
-                            <a href="color-green" class="new-colour color-green" id="color-green" data-color="#9ccc65"></a>
-                            <a href="color-red" class="new-colour color-red" id="color-red" data-color="#ff7043"></a>
-                            <a href="color-brown" class="new-colour color-brown" id="color-brown" data-color="#ae8c64"></a>
-
-                            <h3 class="lighter">Select A Background</h3>
-                            <a href="bg-white" class="new-bg bg-white" data-bg="#ffffff"></a>
-                            <a href="bg-grey" class="new-bg bg-grey" data-bg="#f5f5f5"></a>
-                            <a href="bg-light-blue" class="new-bg bg-light-blue" data-bg="#cfd8dc"></a>
-                            <a href="bg-dark-blue" class="new-bg bg-dark-blue" data-bg="#263238"></a>
-                            <a href="bg-dark-purple" class="new-bg bg-dark-purple" data-bg="#1e1f38"></a>
-                            <a href="bg-brown" class="new-bg bg-brown" data-bg="#383231"></a>
-
-                        </div>
-                        <!-- end set -->
-                    </div>
-
-                    <div class="style-open">
-                        <i class="fa fa-tint"></i>
-                    </div>
-                    <!-- end style-open -->
-
-                </div>
-            </div>
-            <!-- end row -->
-
-
-    </div>
-    <!-- end Style Switcher -->
-
-<!-- Scripts -->
-<script src="assets/js/jquery-1.11.2.min.js" type="text/javascript"></script>
-<script src="assets/boostrap-files/js/bootstrap.min.js" type="text/javascript"></script>
-<script src="assets/js/jquery.appear.js" type="text/javascript"></script>
-<script src="assets/js/jquery.nicescroll.min.js" type="text/javascript"></script>
-<script src="assets/js/jquery.mixitup.min.js" type="text/javascript"></script>
-<script src="assets/js/jquery.magnific-popup.min.js" type="text/javascript"></script>
-<script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
-<script src="assets/js/jquery.inview.min.js" type="text/javascript"></script>
-<script src="assets/js/jquery.knob.min.js" type="text/javascript"></script>
-<script src="assets/js/jquery.cookie.js" type="text/javascript"></script>
-<script src="assets/js/scripts.js" type="text/javascript"></script>
-
+			</div>
+		</div>
+	</div>
 </body>
+
 </html>
