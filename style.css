@@ -24,14 +24,14 @@ a {
     background-color: #FFF;
     border: 2px solid #DDD;
     height:100%;
-    padding: 20px
+    padding: 20px;
+    margin-top:50px;
 }
 
 #header 
 {
     padding:0px;
     background-color:#003056;
-    border-bottom:3px solid #B5EDEE;
     color:#FFF;
 }
 
@@ -90,14 +90,14 @@ a {
 {
     color: #FFF;
     text-decoration:none;
-    padding: 2px;
+    padding: 10px;
 }
 
 #contact a:hover
 {
-    border-bottom:1 px solid #FFF;
+    border-bottom:2px solid #FFF; 
+    background-color:#0076B6;
 }
-
 
 .alignleft 
 {
@@ -107,15 +107,15 @@ a {
 
 #body 
 {
-    color:#616161;
+    color:#000;
 }
 
-#body li 
+#publications li 
 {
     clear:left;
     margin:0;
     padding:0;
-    margin-bottom:20px;
+    margin-bottom:40px;
 }
 
 #body ol
@@ -129,6 +129,18 @@ a {
     font-family: Raleway, sans-serif;
     border-bottom:1px solid #BBB;
     text-transform:uppercase;
+    color:#616161;
+}
+
+#bio a
+{
+    color:#1990b8;
+    font-weight: bold;
+}
+
+#bio a:hover
+{
+    border-bottom:2px solid #003056;
 }
 
 #publications
@@ -142,16 +154,17 @@ a {
     margin-right:2%;
 }
 
-#education, #videos
-{
-    float:left;
-    width: 30%;
-}
-
 #videos h3 
 {
     font-size:16px;
 }
+
+.single_video
+{
+    width:30%;
+    float:left;
+     margin-left:2%
+ }
 
 .youtube-player {
         position: relative;
@@ -213,7 +226,9 @@ a {
     width:100%;
     text-align:center;
     text-transform:uppercase;
-    background-color:#123c69
+    background-color:#123c69;
+    border-bottom:3px solid #B5EDEE;
+
 }
 
 
@@ -239,15 +254,16 @@ a {
     padding:10px;
     display: block;
     padding: 8px 16px;
-    
+    border-top:2px solid #123c69;
+
 }
 
 #navigation ul li a:hover
 {
-
     background-color: #0076B6;
-    color:#FFF;
-    
+    color:#FFF;    
+    border-top:2px solid #FFF;
+
 }
 
 #intro_video {
@@ -260,9 +276,7 @@ a {
 {
     padding: 5px 10px;
     background-color:#4286f4;
-    border-radius:5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    border-bottom:2px solid #003056;
     color:#FFF;
     text-decoration:none;
     font-family: Roboto Condensed, sans-serif;
@@ -277,4 +291,13 @@ a {
     position: fixed;
     top: 0;
     visibility: hidden;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
 }
