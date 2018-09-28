@@ -7,18 +7,18 @@
 <title>Davide Falanga- PhD Student in Robotics</title>
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Alegreya|Cormorant|Fira+Sans|Fira+Sans+Condensed|Fira+Sans+Extra+Condensed|Lato|Merriweather|Noto+Serif|Open+Sans|Open+Sans+Condensed:300|Roboto|Roboto+Condensed|Roboto+Slab|Slabo+27px" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Alegreya|Cormorant|Fira+Sans|Fira+Sans+Condensed|Fira+Sans+Extra+Condensed|Lato|Merriweather|Noto+Serif|Open+Sans|Open+Sans+Condensed:300|Roboto|Roboto+Condensed|Roboto+Slab|Slabo+27px|Josefin+Sans|Raleway" rel="stylesheet" />
 
 <!-- CSS -->
 <link rel="stylesheet" href="style.css" type="text/css" media="all" />
 
 
-<meta name="Author" content="Davide Falanga">
-<meta name="Description" content="Web Page of Davide Falanga">
+<meta name="Author" content="Davide Falanga" />
+<meta name="Description" content="Web Page of Davide Falanga" />
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-85539138-1"></script>
-<script>
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-85539138-1"></script>
+<script type="text/javascript">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -27,7 +27,7 @@
 </script>
 
 
-<script>
+<script type="text/javascript">
 
     /* Light YouTube Embeds by @labnol */
     /* Web: http://labnol.org/?p=27941 */
@@ -62,148 +62,172 @@
 
 </script>
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script>
+    function UpdateTableHeaders() {
+       $(".persist-area").each(function() {
+
+           var el             = $(this),
+               offset         = el.offset(),
+               scrollTop      = $(window).scrollTop(),
+               floatingHeader = $(".floatingHeader", this)
+
+           if ((scrollTop > offset.top) && (scrollTop < offset.top + el.height())) {
+               floatingHeader.css({
+                "visibility": "visible"
+               });
+           } else {
+               floatingHeader.css({
+                "visibility": "hidden"
+               });
+           };
+       });
+    }
+
+    // DOM Ready
+    $(function() {
+
+       var clonedHeaderRow;
+
+       $(".persist-area").each(function() {
+           clonedHeaderRow = $(".persist-header", this);
+           clonedHeaderRow
+             .before(clonedHeaderRow.clone())
+             .css("width", clonedHeaderRow.width())
+             .addClass("floatingHeader");
+
+       });
+
+       $(window)
+        .scroll(UpdateTableHeaders)
+        .trigger("scroll");
+
+    });
+  </script>
 
 </head>
 
 <body>
 
 	<div id="wrapper">
+		<section id="header">
+			<div id="title">
+				<h1>Davide Falanga</h1>   
+				<br />
+				<h2>PhD Student in Robotics</h2>
+			</div>
 
-		<div id="header">
-			<div id="my_img">
-				<img src ="img/me.jpg" width="100px" class="roundcorner">
-			</div>
-			<h1>Davide Falanga</h1>   
-			<h2> - PhD Student in Robotics</h2>
-			<br />
-			<div id="address">
-				<p>Robotics and Perception Group<br />
-				University of Zurich<br />
-				Andreasstrasse 15<br />
-				8050 Zurich</p>
-			</div>
-			
 			<div id="contact">
-				<p>Email: <a href="emailto:falanga@ifi.uzh.ch">falanga@ifi.uzh.ch</a></p>
-				Phone: +41 44 635 43 42<br />
-				<a href="https://www.linkedin.com/in/dfalanga">LinkedIn</a><br />
+				<p><a href="emailto:falanga@ifi.uzh.ch">falanga@ifi.uzh.ch</a> |
+				<a href="https://www.linkedin.com/in/dfalanga">LinkedIn</a> |
 				<a href="https://scholar.google.it/citations?user=gYXvxhQAAAAJ">Google Scholar</a></p>
 			</div>	
 
-			<br style="clear: left;" />
-		</div>
+			<br style="clear:both" />
+					
+			<!--<div id="home_video"> 
+		        <video autoplay loop playsinline muted src="videos/test.mp4" type="video/mp4" width="100%"/>Some text here</video>
+		    </div>-->
+
+		    <div id="navigation" class="persist-header">
+		    	<ul id="navigation_ul">
+		    		<li><a href="#">Home</a></li>
+		    		<li><a href="#">Bio</a></li>
+		    		<li><a href="#">Publications</a></li>
+		    		<li><a href="#">Videos</a></li>
+		    	</ul>
+		    </div>
+		</section>
 		
-			
 		
 		<div id="body">
-			<div id="bio">
-				<h2>About Me</h2>
-				<p>I am currently pursuing a Ph.D. in motion planning and control for Micro Aerial Vechiles, under the supervision of <a href="http://rpg.ifi.uzh.ch/people_scaramuzza.html">Prof. Davide Scaramuzza</a> at the <a href="http://rpg.ifi.uzh.ch">Robotics and Perception Group</a>. My background is in Robotics and Control Systems, as I got a B.Sc. and a M.Sc in Automation Engineering from University of Naples &#8220;Federico II&#8221;, with focus on dynamical systems, robotics and control.</p>
+			<section id="bio">
+				<p><video autoplay loop playsinline muted src="videos/test.mp4" type="video/mp4" width="40%" id="intro_video"/>Some text here</video> I am currently pursuing a Ph.D. in motion planning and control for Micro Aerial Vechiles, under the supervision of <a href="http://rpg.ifi.uzh.ch/people_scaramuzza.html">Prof. Davide Scaramuzza</a> at the <a href="http://rpg.ifi.uzh.ch">Robotics and Perception Group</a>. My background is in Robotics and Control Systems, as I got a B.Sc. and a M.Sc in Automation Engineering from University of Naples &#8220;Federico II&#8221;, with focus on dynamical systems, robotics and control.</p>
 				<p>I am interested in building autonomous, intelligent machines able to navigate by themselves using only onboard sensing and computing. I believe that autonomous robots have the potential to remarkably change and improve our society. My research interests lie at the intersection between perception and action. More specifically, I am investigating techniques to exploit motion planning and control to cope with the limitations of onboard sensors for high-speed flight with small-scale, lightweight, vision-based autonomous quadrotors. Check out my <a href="#publications">publications</a> for further details.</p>
-				<p>Drop me an email at <a href="emailto:falanga@ifi.uzh.ch">falanga@ifi.uzh.ch</a> if you want to get in touch, or check out my profiles on <a href="https://www.linkedin.com/in/dfalanga/"> LinkedIn </a> and <a href="https://scholar.google.it/citations?user=gYXvxhQAAAAJ"> Google Scholar</a>.
-			</div>
+				<p>Drop me an email at <a href="emailto:falanga@ifi.uzh.ch">falanga@ifi.uzh.ch</a> if you want to get in touch, or check out my profiles on <a href="https://www.linkedin.com/in/dfalanga/"> LinkedIn </a> and <a href="https://scholar.google.it/citations?user=gYXvxhQAAAAJ">Google Scholar</a>.</p>
+			</section>
 
-			<div id="education">
-				<h2>Education</h2>
-				<ol>
-					<li>
-						<strong>Ph.D. in Robotics</strong> - University of Zurich <br />
-						[2015-Present] Motion Planning and Control for Vision-based Micro Aerial Vehicles. 
-					</li>
-					<li>
-						<strong>M.Sc. in Automation Engineering</strong> - University of Naples &#8220;Federico II&#8221; <br />
-						[2012-2015] Robotics, Systems and Control - Summa cum Laude.
-					</li>
-					<li>
-						<strong>B.Sc. in Automation Engineering</strong> - University of Naples &#8220;Federico II&#8221; <br />
-						[2008-2012] Dynamical Systems and Control.
-					</li>
-				</ol>
-			</div>
-
-			<div id="publications">
+			<section id="publications">
 				<h2>Publications</h2>
 				<h3>Peer-reviewed Journal Papers</h3>
 				<ol>
 
-					<li>
-						<div class="pub_img">
-							<img src="img/quad.jpg" class="alignleft roundcorner" width="175px" />
-						</div>
-						<div class="pub_desc">
+					<li><img src="img/quad.jpg" class="alignleft roundcorner" width="175px"  alt="RAL17_Faessler"/>
 							M. Faessler, <span style="text-decoration: underline;">D. Falanga</span>, D. Scaramuzza<br />
 							<strong>Thrust Mixing, Saturation, and Body-Rate Control for Accurate Aggressive Quadrotor Flight</strong><br />
 							IEEE Robotics and Automation Letters (RA-L), 2017<br />
-							[<a href="http://rpg.ifi.uzh.ch/docs/RAL17_Faessler.pdf">PDF</a>]
-							[<a href="https://youtu.be/6YEMxFgToyg">Video</a>]
-							[<a href="http://rpg.ifi.uzh.ch/docs/RAL17_Faessler.pptx">PPT</a>]
-							[<a href="https://github.com/uzh-rpg/rpg_quadrotor_control">Code</a>]
-							[<a href="http://dfalanga.me/wp-content/uploads/2018/07/Faessler17RAL.bib">BibTex</a>]
-						</div>
+							<a href="http://rpg.ifi.uzh.ch/docs/RAL17_Faessler.pdf">PDF</a>
+							<a href="https://youtu.be/6YEMxFgToyg">Video</a>
+							<a href="http://rpg.ifi.uzh.ch/docs/RAL17_Faessler.pptx">PPT</a>
+							<a href="https://github.com/uzh-rpg/rpg_quadrotor_control">Code</a>
+							<a href="http://dfalanga.me/wp-content/uploads/2018/07/Faessler17RAL.bib">BibTex</a>
+						
 					</li>
 
-					<li><img src="img/RAL18_Kim.png" class="alignleft roundcorner" width="175px" />
+					<li><img src="img/RAL18_Kim.png" class="alignleft roundcorner" width="175px"  alt="RAL18_Kim"/>
 						S. Kim, <span style="text-decoration: underline;">D. Falanga</span>, D. Scaramuzza<br />
 						<strong>Computing The Forward Reachable Set for a Multirotor Under First-Order Aerodynamic Effects</strong><br />
 						IEEE Robotics and Automation Letters (RA-L), 2018<br />
-						[<a href="http://rpg.ifi.uzh.ch/docs/RAL18_Kim.pdf">PDF</a>]
-						[<a href="http://dfalanga.me/wp-content/uploads/2018/07/Kim18ral.bib">BibTex</a>]
+						<a href="http://rpg.ifi.uzh.ch/docs/RAL18_Kim.pdf">PDF</a>
+						<a href="http://dfalanga.me/wp-content/uploads/2018/07/Kim18ral.bib">BibTex</a>
 					</li>
 				</ol>
 				<h3>Peer-reviewed Conference Papers</h3>
 				<ol>
-					<li><img src="img/ICRA17_Falanga.jpg" class="alignleft roundcorner" width="175px" />
+					<li><img src="img/ICRA17_Falanga.jpg" class="alignleft roundcorner" width="175px" alt="ICRA17_Falanga"/>
 						<span style="text-decoration: underline;">D. Falanga</span>, E. Mueggler, M. Faessler, D. Scaramuzza<br />
 						<strong>Aggressive Quadrotor Flight through Narrow Gaps with Onboard Sensing and Computing using Active Vision</strong><br />
 						IEEE International Conference on Robotics and Automation (ICRA), Singapore, 2017<br />
-						[<a href="http://rpg.ifi.uzh.ch/docs/ICRA17_Falanga.pdf">PDF</a>]
-						[<a href="https://www.youtube.com/watch?v=meSItatXQ7M">Video</a>]
-						[<a href="http://rpg.ifi.uzh.ch/docs/ICRA17_Falanga.pptm">PPT</a>] 
-						[<a href="http://dfalanga.me/wp-content/uploads/2018/07/Falanga17icra.bib">BibTex</a>]
+						<a href="http://rpg.ifi.uzh.ch/docs/ICRA17_Falanga.pdf">PDF</a>
+						<a href="https://www.youtube.com/watch?v=meSItatXQ7M">Video</a>
+						<a href="http://rpg.ifi.uzh.ch/docs/ICRA17_Falanga.pptm">PPT</a> 
+						<a href="http://dfalanga.me/wp-content/uploads/2018/07/Falanga17icra.bib">BibTex</a>
 					</li>
 
-					<li><img src="img/RSS17_Foehn.jpg" class="alignleft roundcorner" width="175px" />
+					<li><img src="img/RSS17_Foehn.jpg" class="alignleft roundcorner" width="175px"  alt="RSS17_Foehn"/>
 						P. Foehn, <span style="text-decoration: underline;">D. Falanga</span>, N. Kuppuswamy, R. Tedrake, D. Scaramuzza<br />
 						<strong>Fast Trajectory Optimization for Agile Quadrotor Maneuvers with a Cable-Suspended Payload</strong><br />
-						Robotics: Science and Systems (RSS), Boston, 2017 <a href="http://www.roboticsfoundation.org/index.php/awards"><span style="color: #ee0000;"><strong>Best Student Paper Award Finalist</strong></span></a><br />
-						[<a href="http://rpg.ifi.uzh.ch/docs/RSS17_Foehn.pdf" >PDF</a>]
-						[<a href="https://www.youtube.com/watch?v=s9zb5MRXiHA">Video</a>]
-						[<a href="http://rpg.ifi.uzh.ch/docs/RSS17_Foehn.pptx">PPT</a>]
-						[<a href="http://dfalanga.me/wp-content/uploads/2018/07/Foehn2017rss.bib">BibTex</a>]
+						Robotics: Science and Systems (RSS), Boston, 2017 <span style="color: #ee0000;"><strong>Best Student Paper Award Finalist</strong></span><br />
+						<a href="http://rpg.ifi.uzh.ch/docs/RSS17_Foehn.pdf" >PDF</a>
+						<a href="https://www.youtube.com/watch?v=s9zb5MRXiHA">Video</a>
+						<a href="http://rpg.ifi.uzh.ch/docs/RSS17_Foehn.pptx">PPT</a>
+						<a href="http://dfalanga.me/wp-content/uploads/2018/07/Foehn2017rss.bib">BibTex</a>
 					</li>
 
-					<li><img src="img/SSRR17_Falanga.png" class="alignleft roundcorner" width="175px" />
+					<li><img src="img/SSRR17_Falanga.png" class="alignleft roundcorner" width="175px"  alt="SSRR17_Falanga"/>
 						<span style="text-decoration: underline;">D. Falanga</span>, A. Zanchettin, A. Simovic, J. Delmerico, D. Scaramuzza<br />
 						<strong>Vision-based Autonomous Quadrotor Landing on a Moving Platform</strong><br />
 						IEEE/RSJ International Symposium on Safety, Security and Rescue Robotics (SSRR), Shanghai, 2017<br />
-						[<a href="http://rpg.ifi.uzh.ch/docs/SSRR17_Falanga.pdf" >PDF</a>]
-						[<a href="https://youtu.be/Tz5ubwoAfNE">Video</a>]
-						[<a href="http://rpg.ifi.uzh.ch/docs/SSRR17_Falanga.pptx">PPT</a>]
-						[<a href="http://dfalanga.me/wp-content/uploads/2018/07/Falanga17ssrr.bib">BibTex</a>]
+						<a href="http://rpg.ifi.uzh.ch/docs/SSRR17_Falanga.pdf" >PDF</a>
+						<a href="https://youtu.be/Tz5ubwoAfNE">Video</a>
+						<a href="http://rpg.ifi.uzh.ch/docs/SSRR17_Falanga.pptx">PPT</a>
+						<a href="http://dfalanga.me/wp-content/uploads/2018/07/Falanga17ssrr.bib">BibTex</a>
 					</li>
 
-					<li><img src="img/uav_game.jpg" class="alignleft roundcorner" width="175px" />
+					<li><img src="img/uav_game.jpg" class="alignleft roundcorner" width="175px"  alt="RSS18_Spica"/>
 						R. Spica, <span style="text-decoration: underline;">D. Falanga</span>, E. Cristofalo, E. Montijano, D. Scaramuzza, M. Schwager<br />
 						<strong>A Game Theoretic Approach to Autonomous Two-Player Drone Racing</strong><br />
 						Robotics: Science and Systems (RSS), Pittsburgh, 2018<br />
-						[<a href="http://rpg.ifi.uzh.ch/docs/RSS18_Spica.pdf" >PDF</a>]
-						[<a href="https://msl.stanford.edu/game-theoretic-planning-autonomous-drone-racing">Video</a>]
-						[<a href="http://dfalanga.me/wp-content/uploads/2018/07/Spica18rss.bib">BibTex</a>]
+						<a href="http://rpg.ifi.uzh.ch/docs/RSS18_Spica.pdf" >PDF</a>
+						<a href="https://msl.stanford.edu/game-theoretic-planning-autonomous-drone-racing">Video</a>
+						<a href="http://dfalanga.me/wp-content/uploads/2018/07/Spica18rss.bib">BibTex</a>
 					</li>
 
-					<li><img src="img/IROS18_Falanga.png" class="alignleft roundcorner" width="175px" />
+					<li><img src="img/IROS18_Falanga.png" class="alignleft roundcorner" width="175px"  alt="IROS18_Falanga"/>
 						<span style="text-decoration: underline;">D. Falanga</span>, P. Foehn, P. Lu, D. Scaramuzza<br />
 						<strong>PAMPC: Perception-Aware Model Predictive Control for Quadrotors</strong><br />
 						IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Madrid, 2018<br />
-						[<a href="http://rpg.ifi.uzh.ch/docs/IROS18_Falanga.pdf" >PDF</a>]
-						[<a href="https://www.youtube.com/watch?v=9vaj829vE18">Video</a>]
-						[<a href="https://github.com/uzh-rpg/rpg_mpc">Code</a>]
-						[<a href="http://dfalanga.me/wp-content/uploads/2018/07/Falanga18iros.bib">BibTex</a>]
+						<a href="http://rpg.ifi.uzh.ch/docs/IROS18_Falanga.pdf" >PDF</a>
+						<a href="https://www.youtube.com/watch?v=9vaj829vE18">Video</a>
+						<a href="https://github.com/uzh-rpg/rpg_mpc">Code</a>
+						<a href="http://dfalanga.me/wp-content/uploads/2018/07/Falanga18iros.bib">BibTex</a>
 					</li>
 				</ol>
-			</div>
+			</section>
 
-			<div id="videos">
+			<br style="clear:both" />
+
+			<section id="videos">
 				<h2>Videos</h2>
 				<h3>Aggressive Quadrotor Flight through Narrow Gaps with Onboard Sensing and Computing using Active Vision</h3>
 				<div class="youtube-player" data-id="meSItatXQ7M"></div>
@@ -214,8 +238,7 @@
 				<h3>Thrust Mixing, Saturation, and Body-Rate Control for Accurate Aggressive Quadrotor Fligh</h3>
 				<div class="youtube-player" data-id="6YEMxFgToyg"></div>
 
-				<h3>Fast Trajectory Optimization for Agile Quadrotor Maneuvers with a Cable-Suspended Payload
-</h3>
+				<h3>Fast Trajectory Optimization for Agile Quadrotor Maneuvers with a Cable-Suspended Payload</h3>
 				<div class="youtube-player" data-id="s9zb5MRXiHA"></div>
 
 				<h3>Vision-based Autonomous Quadrotor Landing on a Moving Platform</h3>
@@ -223,9 +246,8 @@
 
 				<h3>A Game Theoretic Approach to Autonomous Two-Player Drone Racing</h3>
 				<div class="youtube-player" data-id="cJW1RysDKDg"></div>
-				
 
-			</div>
+			</section>
 		</div>
 	</div>
 </body>

@@ -1,99 +1,156 @@
 body 
 {
-	background-color: #F0F0F0;
-	font-family: Alegreya;
-	text-align: justify;
+    background-color: #EEE;
+    font-family: Lato;
+    text-align: justify;
+    line-height:25px;
+    font-size:14px;
+}
+
+a {
+    text-decoration:none;
 }
 
 .roundcorner {
-	border-radius:5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+    border-radius:5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
 }
 
 #wrapper
 {
-	width:80%;
-	margin: auto;
+    width:50%;
+    margin: auto;
+    background-color: #FFF;
+    border: 2px solid #DDD;
+    height:100%;
+    padding: 20px
 }
 
-#header h1, #header h2
+#header 
 {
-	font-family: Fira Sans, sans-serif;
-	display:inline;
+    padding:0px;
+    background-color:#003056;
+    border-bottom:3px solid #B5EDEE;
+    color:#FFF;
+}
+
+#header h1
+{
+    font-family: Raleway;
+    text-transform:uppercase;
+    font-weight:normal;
+    font-size:40px;
+    display:inline;    
+    padding-top:20px;
+}
+
+#header h2
+{
+    font-family: Josefin Sans, sans-serif;
+    display:inline;
+    font-weight:normal;
+    font-size:20px;
 }
 
 #header p
 {
-	padding:0;
-	margin:0;
+    padding:0;
+    margin:0;
+    font-family: Josefin Sans;
+    vertical-align: middle;
+
 }
 
-#my_img
+#title, #contact
 {
-	float:left;
-	margin-right: 50px;
+    width:40%;
+    vertical-align: middle;
+    padding:20px;
+
 }
 
-#address 
+#title
 {
-	float:left;
-	width:37.5%;
+    float:left;
 }
+
 
 #contact
 {
-	float:left;
-	width:40%;
+    float:right;
 }
+
+
+#contact p {
+    text-align:right;
+}
+
+#contact a
+{
+    color: #FFF;
+    text-decoration:none;
+    padding: 2px;
+}
+
+#contact a:hover
+{
+    border-bottom:1 px solid #FFF;
+}
+
 
 .alignleft 
 {
-	float:left;
-	margin-right: 10px;
+    float:left;
+    margin-right: 10px;
+}
+
+#body 
+{
+    color:#616161;
 }
 
 #body li 
 {
-	clear:left;
-	margin:0;
-	padding:0;
+    clear:left;
+    margin:0;
+    padding:0;
     margin-bottom:20px;
 }
 
 #body ol
 {
-	list-style:none;
-	padding:0;
+    list-style:none;
+    padding:0;
 }
 
 #body h2
 {
-	font-family: Noto, sans-serif;
-	border-bottom:1px solid #BBB;
+    font-family: Raleway, sans-serif;
+    border-bottom:1px solid #BBB;
+    text-transform:uppercase;
 }
 
 #publications
  {
- 	clear:left;
+    clear:left;
  }
 
 #bio, #publications
 {
-	width:60%;
-	float:left;
-	margin-right:2%;
+    width:100%;
+    margin-right:2%;
 }
 
 #education, #videos
 {
-	float:left;
-	width: 30%;
+    float:left;
+    width: 30%;
 }
 
 #videos h3 
 {
-	font-size:16px;
+    font-size:16px;
 }
 
 .youtube-player {
@@ -149,4 +206,75 @@ body
     position: absolute;
     background: url("img/play.png") no-repeat;
     cursor: pointer;
+}
+
+#navigation 
+{
+    width:100%;
+    text-align:center;
+    text-transform:uppercase;
+    background-color:#123c69
+}
+
+
+#navigation ul{
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+
+#navigation ul li 
+{
+    float: none;
+    display: inline-block;
+    margin-right: 20px;
+    font-family: Roboto Condensed, sans-serif;
+}
+
+#navigation ul li a
+{
+    color:#FFF;
+    text-decoration:none;
+    padding:10px;
+    display: block;
+    padding: 8px 16px;
+    
+}
+
+#navigation ul li a:hover
+{
+
+    background-color: #0076B6;
+    color:#FFF;
+    
+}
+
+#intro_video {
+    float:left;
+    padding-right:20px;
+    padding-bottom:20px;
+}
+
+#publications a 
+{
+    padding: 5px 10px;
+    background-color:#4286f4;
+    border-radius:5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color:#FFF;
+    text-decoration:none;
+    font-family: Roboto Condensed, sans-serif;
+}
+
+#publications a:hover 
+{
+    background-color:#f44144;
+}
+
+.floatingHeader {
+    position: fixed;
+    top: 0;
+    visibility: hidden;
 }
