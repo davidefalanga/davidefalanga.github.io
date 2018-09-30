@@ -19,7 +19,7 @@ a {
 
 #wrapper
 {
-    width:50%;
+    width:65%;
     margin: auto;
     background-color: #FFF;
     border: 2px solid #DDD;
@@ -140,7 +140,7 @@ a {
 
 #bio a:hover
 {
-    border-bottom:2px solid #003056;
+    color:#f44144
 }
 
 #publications
@@ -254,16 +254,12 @@ a {
     padding:10px;
     display: block;
     padding: 8px 16px;
-    border-top:2px solid #123c69;
-
 }
 
 #navigation ul li a:hover
 {
     background-color: #0076B6;
     color:#FFF;    
-    border-top:2px solid #FFF;
-
 }
 
 #intro_video {
@@ -280,11 +276,13 @@ a {
     color:#FFF;
     text-decoration:none;
     font-family: Roboto Condensed, sans-serif;
+    margin-right:5px
 }
 
 #publications a:hover 
 {
     background-color:#f44144;
+    border-bottom:2px solid #6d0001
 }
 
 .floatingHeader {
