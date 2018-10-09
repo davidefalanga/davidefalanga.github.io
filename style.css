@@ -113,9 +113,37 @@ a {
 #publications li 
 {
     clear:left;
-    margin:0;
-    padding:0;
     margin-bottom:40px;
+    border-bottom:1px dashed #BBB;
+    padding: 5px;
+    margin:5px auto;
+    overflow:auto;
+}
+
+#publications li:last-child 
+{
+    border:none;
+}
+
+.pub_img 
+{
+    float:left; 
+    width:25%
+}
+
+.pub_img img 
+{
+    width:100%
+}
+
+.pub_text 
+{
+    float:right; 
+    width:72.5%;
+    font-size:13px;
+    font-family: Roboto, sans-serif;
+    line-height:22px;
+    color:#787878;
 }
 
 #body ol
@@ -140,12 +168,14 @@ a {
 
 #bio a:hover
 {
-    color:#f44144
+    color:#f44144;
 }
 
 #bio 
 {
-	font-family: Ubuntu, sans-serif;
+        font-family: Roboto, sans-serif;
+    line-height:22px;
+    color:#787878;
 }
 
 #publications
@@ -261,6 +291,7 @@ a {
 {
     background-color: #0076B6;
     color:#FFF;    
+    transition: background .5s;
 }
 
 #intro_video {
@@ -283,7 +314,8 @@ a {
 #publications a:hover 
 {
     background-color:#f44144;
-    border-bottom:2px solid #6d0001
+    border-bottom:2px solid #6d0001;
+    transition: background .5s;
 }
 
 .floatingHeader {
