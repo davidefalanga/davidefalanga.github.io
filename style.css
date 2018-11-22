@@ -21,22 +21,34 @@ ol
 
 .menu_on_top
 {
-    background-color:#FFF;
+    background-color: #0B50A5;
+    border-bottom: 3px solid #90AFD6;    
     position:fixed;
     top:0;
     left:0;
     z-index:99;
-    border-bottom:1px solid #EEE;
 
 }
+
+.menu_on_top a
+{
+    color:#FFF !important;
+}
+
+.menu_on_top a:hover
+{
+    color:#BCCFE6 !important;
+}
+
+
 
 #wrapper 
 {
     width: 62%;
     background-color:#FFF;
-    border-radius:10px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
+    border-radius:20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
     margin:20px auto;
     padding:20px;
 }
@@ -48,6 +60,7 @@ ol
     display: flex; /* equal height of the children */
     border-bottom:1px solid #EEE;
 }
+
 
 #header li{
   margin-right: 20px;
@@ -131,7 +144,7 @@ ol
 
 #social ul
 {
-    background-color:#1990b8;
+    background-color:#0B50A5;
     border-radius: 20px 0px 0px 20px;
     padding:20px;
     margin-right:-20px;
@@ -152,6 +165,7 @@ ol
 #social li::after
 {
     content: " | ";
+    color:#FFF;
 }
 
 #social li:last-child::after
@@ -168,7 +182,7 @@ ol
   font-size: 18px;
   border: none;
   outline: none;
-  background-color: red;
+  background-color: #ED2324;
   color: white;
   cursor: pointer;
   padding: 15px;
@@ -197,7 +211,7 @@ ol
 
 #navigation ul li a:hover
 {
-    color:#1990b8;
+    color:#ED2324;
     -webkit-transition: color .5s; /* Safari */
     transition: color .5s;
 }
@@ -226,6 +240,7 @@ ol
 {
     text-transform:uppercase;
     font-size:30px;
+    margin-bottom:0px;
 }
 
 #content h3
@@ -248,7 +263,7 @@ ol
 
 #bio a:hover 
 {
-    border-bottom:1px solid #000;
+    border-bottom:1px solid #C00;
 }
 
 #publications
@@ -341,19 +356,34 @@ ol
 
 .single_video
 {
-    width:30%;
-    float:left;
-     margin-left:2%
+    flex:1;
+    margin-right:10px;
  }
 
+ .single_video:last-child
+ {
+    margin-right:0px;
+ }
+
+.single_video h4
+{
+    font-size:14px;
+    line-height:18px;
+}
+
+ .video_row
+{
+    display:flex;
+}
+
+
 .youtube-player {
-        position: relative;
-        padding-bottom: 56.23%;
-        height: 0;
-        overflow: hidden;
-        max-width: 100%;
-        background: #000;
-        margin: 5px;
+    position: relative;
+    padding-bottom: 56.23%;
+    height: 0;
+    overflow: hidden;
+    background: #000;
+    border:1px solid #000;
 }
     
 .youtube-player iframe {
@@ -364,6 +394,8 @@ ol
     height: 100%;
     z-index: 100;
     background: transparent;
+
+
 }
     
 .youtube-player img {
@@ -382,6 +414,7 @@ ol
     -webkit-transition: .4s all;
     -moz-transition: .4s all;
     transition: .4s all;
+    padding:0;
 }
     
 .youtube-player img:hover {
