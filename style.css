@@ -186,11 +186,13 @@ ol
   color: white;
   cursor: pointer;
   padding: 15px;
+  border:2px solid #ED2324;
   border-radius: 4px;
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: #FFF;
+  color: #ED2324;
 }
 
 
@@ -354,10 +356,16 @@ ol
     
 }
 
+ .video_row
+{
+    display:flex;
+    flex-wrap: wrap;
+}
+
 .single_video
 {
-    flex:1;
-    margin-right:10px;
+    flex: 0 0 31%;
+    margin-right: 1%;
  }
 
  .single_video:last-child
@@ -369,13 +377,9 @@ ol
 {
     font-size:14px;
     line-height:18px;
+    font-family:Lato;
+    padding:2px;
 }
-
- .video_row
-{
-    display:flex;
-}
-
 
 .youtube-player {
     position: relative;
@@ -422,14 +426,14 @@ ol
 }
     
 .youtube-player .play {
-    height: 72px;
+    height: 49px;
     width: 72px;
     left: 50%;
     top: 50%;
     margin-left: -36px;
-    margin-top: -36px;
+    margin-top: -24px;
     position: absolute;
-    background: url("img/play.png") no-repeat;
+    background: url("img/video.png") no-repeat;
     cursor: pointer;
 }
 
