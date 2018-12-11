@@ -280,8 +280,7 @@ ol
 }
 
 .pub_img_div {
-    width:10%;
-    min-width:175px;
+    margin-right:20px;
 }
 
 .pub_text {
@@ -312,12 +311,12 @@ ol
 
 #publications img {
     display: block;
-    border-radius: 100%;
+    border-radius: 10%;
     box-sizing: border-box;
     background-color: #DDD;
     border: 5px solid #cfd8dc;
-    height: 150px;
-    width: 150px;
+    height: 157px;
+    width:300;
 }
 
 .pub_links
