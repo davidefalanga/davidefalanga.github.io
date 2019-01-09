@@ -2,7 +2,7 @@ body {
   height: 100%;
   margin: 0px;
   display: flex;
-  background-color:#EEE;
+  background-color: #EEE;
   scroll-behavior: smooth;
 }
 
@@ -230,7 +230,8 @@ ol
 
 #content
 {
-    font-family: Roboto, sans-serif;
+    font-family: Source Sans Pro, sans-serif;
+    color:#333;
     line-height: 28px;
     font-size:18px;
     width:90%;
