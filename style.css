@@ -209,11 +209,12 @@ ol
     display: block;
     padding: 8px 8px;
     margin:0px 8px;
+    color:#777;
 }
 
 #navigation ul li a:hover
 {
-    color:#ED2324;
+    color:#000;/*#ED2324;*/
     -webkit-transition: color .5s; /* Safari */
     transition: color .5s;
 }
@@ -437,6 +438,26 @@ ol
     cursor: pointer;
 }
 
+#media li{
+    display: inline;
+    text-align: center;
+}
+
+#media img
+{
+    height:100px;
+    padding-right:20px;
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    display: block;
+    margin: auto;
+}
+
+#media img:hover
+{
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
 
 /*
 
