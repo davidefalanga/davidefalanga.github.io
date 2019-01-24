@@ -438,15 +438,15 @@ ol
     cursor: pointer;
 }
 
-#media li{
-    display: inline;
-    text-align: center;
+#media ul {
+  display: flex;
+  justify-content: center;
 }
 
 #media img
 {
     height:100px;
-    padding-right:20px;
+    padding:10px 40px 10px 0px;
     opacity: 0.5;
     filter: alpha(opacity=50); /* For IE8 and earlier */
     display: block;
