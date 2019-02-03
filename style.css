@@ -367,7 +367,7 @@ ol
 {
     flex: 0 0 31%;
     margin-right: 1%;
- }
+}
 
  .single_video:last-child
  {
@@ -471,7 +471,7 @@ ol
     filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
-@media (max-width: 700px) { /* change to any number you want */
+@media (max-width: 900px) { /* change to any number you want */
     #wrapper {
         width:100%;
         margin:0 auto;
@@ -519,6 +519,12 @@ ol
 
     #social {
         display:none;
+    }
+
+    .single_video
+    {
+        flex: 0 0 48%;
+        margin-right: 1%;
     }
 
 }
