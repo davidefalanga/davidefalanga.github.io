@@ -19,8 +19,6 @@ ol
     padding:0;
 }
 
-
-
 #wrapper 
 {
     width: 62%;
@@ -525,6 +523,10 @@ ol
     {
         flex: 0 0 48%;
         margin-right: 1%;
+    }
+
+    #myBtn {
+        display:none !important;
     }
 
 }
