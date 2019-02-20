@@ -475,6 +475,9 @@ ol
         width:100%;
         margin:0 auto;
         padding:5px;
+        border-radius:0px;
+        -moz-border-radius: 0px;
+        -webkit-border-radius: 0px;
     }
     #media img{
         display:none;
