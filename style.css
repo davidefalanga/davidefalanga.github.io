@@ -478,6 +478,13 @@ ol
         -moz-border-radius: 0px;
         -webkit-border-radius: 0px;
     }
+
+    #navigation ul li a{
+        margin-bottom:0px;
+        display:inline-block; 
+        vertical-align:middle;
+    }
+
     #media img{
         display:none;
     }
