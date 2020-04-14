@@ -274,6 +274,7 @@ ol
 
 #awards h4 {
     margin-bottom:-15px;
+    font-weight: bold !important;
 }
 
 #publications li
@@ -438,9 +439,6 @@ ol
     cursor: pointer;
 }
 
-#media .mobile_text{
-    display:none;
-}
 
 #media ul {
     padding: 0;
@@ -456,20 +454,43 @@ ol
     padding:0;
 }
 
-#media img
-{
-    height:100px;
-    max-width:100%;
-    padding:10px 15px 10px 0px;
-    opacity: 0.5;
-    filter: alpha(opacity=50); /* For IE8 and earlier */
-    margin: auto;
+#media img {
+    display:none;
 }
 
-#media img:hover
+#media ul {
+    display:block !important;
+    list-style-type: circle !important;
+}
+
+#media li{
+    display:inline !important; 
+}
+
+#media a 
 {
-    opacity: 1.0;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
+    text-decoration:none;
+    color:#C00;
+}
+
+#media li::after
+{
+    content: " - ";
+    color:#000;
+}
+
+#media li:last-child::after
+{
+    content:none;
+}
+
+#media a:hover 
+{
+    border-bottom:1px solid #C00 !important;
+}
+
+#media h3 {
+    font-weight: bold;
 }
 
 @media (max-width: 1100px) { /* change to any number you want */
