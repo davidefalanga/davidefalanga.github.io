@@ -444,7 +444,7 @@ ol
     padding: 0;
     margin: 0;
     list-style-type: none;
-    display: flex;
+    display: block;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -454,13 +454,12 @@ ol
     padding:0;
 }
 
-#media img {
-    display:none;
+#media h3 {
+    margin-bottom:2px;
 }
 
-#media ul {
-    display:block !important;
-    list-style-type: circle !important;
+#media img {
+    display:none;
 }
 
 #media li{
