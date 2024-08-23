@@ -1,470 +1,59 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Davide Falanga</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 
-<title>Davide Falanga | Robotics Engineer</title>
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Alegreya|Cormorant|Fira+Sans|Fira+Sans+Condensed|Fira+Sans+Extra+Condensed|Lato|Merriweather|Noto+Serif|Open+Sans|Open+Sans+Condensed:300|Roboto|Roboto+Condensed|Roboto+Slab|Slabo+27px|Josefin+Sans|Raleway|Ropa+Sans|Ubuntu|Titillium+Web|Dosis|Source+Sans+Pro" rel="stylesheet" />
-
-<!-- CSS -->
-<link rel="stylesheet" href="style.css" type="text/css" media="all" />
-
-<meta name="Author" content="Davide Falanga" />
-<meta name="Description" content="Web Page of Davide Falanga" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-85539138-1"></script>
-<script type="text/javascript">
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-85539138-1');
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript" ></script>
-<script type="text/javascript" >
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    var offsetHeight = document.getElementById('header').offsetHeight;
-
-    if (document.body.scrollTop > offsetHeight || document.documentElement.scrollTop > offsetHeight) {
-        document.getElementById("myBtn").style.display = "block";
-        document.getElementById("navigation").classList.add("menu_on_top");
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-        document.getElementById("navigation").classList.remove("menu_on_top");
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-</script>
-
-<script type="text/javascript" >
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-</script>
-
-
-<script type="text/javascript">
-
-    /* Light YouTube Embeds by @labnol */
-    /* Web: http://labnol.org/?p=27941 */
-
-    document.addEventListener("DOMContentLoaded",
-        function() {
-            var div, n,
-                v = document.getElementsByClassName("youtube-player");
-            for (n = 0; n < v.length; n++) {
-                div = document.createElement("div");
-                div.setAttribute("data-id", v[n].dataset.id);
-                div.innerHTML = labnolThumb(v[n].dataset.id);
-                div.onclick = labnolIframe;
-                v[n].appendChild(div);
-            }
-        });
-
-    function labnolThumb(id) {
-        var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">',
-            play = '<div class="play"></div>';
-        return thumb.replace("ID", id) + play;
-    }
-
-    function labnolIframe() {
-        var iframe = document.createElement("iframe");
-        var embed = "https://www.youtube.com/embed/ID?autoplay=1";
-        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
-        iframe.setAttribute("frameborder", "0");
-        iframe.setAttribute("allowfullscreen", "1");
-        this.parentNode.replaceChild(iframe, this);
-    }
-
-</script>
-
-<!-- Hotjar Tracking Code for http://www.dfalanga.me -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:1206344,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org/",
-  "@type": "Person",
-  "name": "Davide Falanga",
-  "image": "https://rpg.ifi.uzh.ch/img/people/davide_falanga.jpg",
-  "jobTitle": "Robotics Engineer", 
-  "url": "http://www.dfalanga.me",
-   "sameAs": [
-    "https://www.linkedin.com/in/dfalanga",
-    "https://scholar.google.com/citations?user=gYXvxhQAAAAJ"
-  ],
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Skydio"
-  },
-  "award": [
-		"Drone Hero Award 2019 - Most Innovative Drone",
-		"NASA Tech Briefs Create the Future contest 2019 - Winner for Aerospace and Defense",
-		"NASA Tech Briefs Create the Future contest 2020 - Honorable mention for Aerospace and Defense",
-		"IROS 2018 Autonomous Drone Race",
-		"RSS 2017 Best Student Paper Award Finalist"
-  ]
-}
-</script>
-
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "Person",
+          "name": "Davide Falanga",
+          "image": "https://rpg.ifi.uzh.ch/img/people/davide_falanga.jpg",
+          "jobTitle": "Robotics Engineer", 
+          "url": "http://www.dfalanga.me",
+           "sameAs": [
+            "https://www.linkedin.com/in/dfalanga",
+            "https://scholar.google.com/citations?user=gYXvxhQAAAAJ"
+          ],
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Skydio"
+          },
+          "award": [
+                "Drone Hero Award 2019 - Most Innovative Drone",
+                "NASA Tech Briefs Create the Future contest 2019 - Winner for Aerospace and Defense",
+                "NASA Tech Briefs Create the Future contest 2020 - Honorable mention for Aerospace and Defense",
+                "IROS 2018 Autonomous Drone Race",
+                "RSS 2017 Best Student Paper Award Finalist"
+          ]
+        }
+    </script>
 </head>
-
 <body>
-
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
-
-    <div id="wrapper">
-    	<div id="header">
-        	<div id="title" class="header_col">
-				<h1>Davide Falanga</h1>   
-				<h2>Robotics Engineer</h2>
-			</div>
-
-			<div id="header_right" class="header_col">
-				<div id="social">
-				    <ul>
-				    	<li><a href="emailto:falanga@ifi.uzh.ch">Email</a></li>
-				    	<li><a href="https://www.linkedin.com/in/dfalanga">LinkedIn</a></li>
-				    	<li><a href="https://scholar.google.com/citations?user=gYXvxhQAAAAJ">Scholar</a></li>
-				    </ul>
-				</div>
-			
-				<div id="navigation">
-				    <ul>
-				    	<li><a href="#bio">Bio</a></li>
-				    	<li><a href="#bio">Awards</a></li>
-				    	<li><a href="#media">Media Coverage</a></li>
-                        <li><a href="#publications">Publications</a></li>
-				    	<li><a href="#videos">Videos</a></li>
-				    </ul>
-				</div>
-			</div>
-		</div>
-
-        <div id="content">
-        	<div id="bio">
-                <h2>About Me</h2>
-                <p>I am currently a Director of Engineering, Head of Planning & Controls at <a href="http://www.skydio.com">Skydio</a>.</p>
-		<p>I received a Ph.D. in motion planning and control for Micro Aerial Vehicles, under the supervision of <a href="http://rpg.ifi.uzh.ch/people_scaramuzza.html">Prof. Davide Scaramuzza</a> at the <a href="http://rpg.ifi.uzh.ch">Robotics and Perception Group</a>, University of Zurich. During my doctoral studies, I worked at the intersection between perception and action. More specifically, I developed techniques to exploit motion planning and control to cope with the limitations of onboard sensors for high-speed flight with small-scale, lightweight, vision-based autonomous quadrotors. Check out my <a href="http://rpg.ifi.uzh.ch/docs/PhD19_Falanga.pdf">PhD thesis</a> for further details. Previously, I received a B.Sc. and a M.Sc in Automation Engineering from University of Naples &#8220;Federico II&#8221;, with focus on dynamical systems, robotics and control.</p>
-		<p>Drop me an email at <a href="emailto:dfalanga@gmail.com">dfalanga@gmail.com</a> if you want to get in touch, or check out my profiles on <a href="https://www.linkedin.com/in/dfalanga/"> LinkedIn </a> and <a href="https://scholar.google.it/citations?user=gYXvxhQAAAAJ">Google Scholar</a>.</p>
-	</div>
-
-	<div id="awards">
-                <h2>Awards and Achievements</h2>
-                    <h4>Science Robotics cover page</h4>
-                    <p> My research on event-based obstacle avoidance was featured on the cover page of Science Robotics (<a href="https://robotics.sciencemag.org/content/5/40">see issue here</a>).</p>
-					<h4>Drone Hero Award 2019</h4>
-					<p> Winner of the category <em>Most Innovative Drone</em> (<a href="https://www.dronehero.eu/winners/winners-2019/">see list of winners</a>).</p>
-					<h4>NASA Tech Briefs "Create the Future" contest 2019</h4> 
-					<p>Winner of the category <em>Aerospace and Defense</em> (<a href="https://contest.techbriefs.com/2019/winners">see list of winners</a>).</p>
-					<h4>NASA Tech Briefs "Create the Future" contest 2020</h4> 
-					<p>Finalist and honorable mention for the category <em>Aerospace and Defense</em> (<a href="https://contest.techbriefs.com/2020/winners">see list of winners</a>).</p>
-					<h4>IROS 2018 Autonomous Drone Racing</h4> 
-					<p>Member of the team that won the IROS 2018 Autonomous Drone Racing (<a href="https://www.iros2018.org/competitions">see list of winners</a>, video of the performance <a href="https://www.youtube.com/watch?v=9AvJ3-n-82w">here</a>).</p>
-					<h4>RSS 2017 Best Student Award Finalist</h4>
-					<p>More information available <a href="https://rss2017.lids.mit.edu/program/awards/">here</a>.
-			</div>
-
-            <div id="media">
-                <h2>Media Coverage</h2>
-                <h4>Agile Quadrotor Flight through Narrow Gaps using Onboard Sensing and Computing</h4>
-                <ul>
-                    <li><a href="http://www.technologyreview.com/s/603088/watch-this-robotic-quadcopter-fly-aggressively-through-narrow-gaps" title="MIT Technology Review"><span class="mobile_text">MIT Technology Review</a></span></li>
-                    <li><a href="http://robohub.org/drone-flight-through-narrow-gaps-using-onboard-sensing-and-computing" title="Robohub"><span class="mobile_text">Robohub</a></span></li>
-                    <li><a href="http://www.digitaltrends.com/cool-tech/drones-tight-spaces" title="Digital Trends"><span class="mobile_text">Digital Trends</a></span></li>
-                    <li><a href="http://spectrum.ieee.org/automaton/robotics/drones/aggressive-quadrotors-conquer-gaps-with-ultimate-autonomy" title="IEEE Spectrum"><span class="mobile_text">IEEE Spectrum</a></span></li>
-                </ul>
-                <h3>The Foldable Drone: a Morphing Quadrotor that can Squeeze and Fly</h3>
-                <ul>
-                    <li><a href="http://graphics.reuters.com/EUROPE-UNIVERSITY-INNOVATION/010091N02HR/index.html" title="Reuters"><span class="mobile_text"/>Reuters</a></span></li>
-                    <li><a href="https://www.youtube.com/watch?v=axKzm4hZqZU" title="BBC"><span class="mobile_text"/>BBC</a></span></li>
-                    <li><a href="http://techcrunch.com/2018/12/14/this-drone-shrinks-to-fit" title="TechCrunch"><span class="mobile_text"/>TechCrunch</a></span></li>
-                    <li><a href="http://www.theverge.com/2018/12/20/18150454/shape-shifting-drone-future-rescue-missions" title="The Verge"><span class="mobile_text"/>The Verge</a></span></li>
-                    <li><a href="http://www.cnet.com/videos/foldable-drone-can-fit-through-tight-spaces" title="CNET"><span class="mobile_text"/>CNET</span></a></li>
-                    <li><a href="http://www.cnbc.com/2019/02/18/self-folding-drone-could-speed-up-search-and-rescue-missions.html" title="CNBC"><span class="mobile_text"/>CNBC</span></a></li>
-                    <li><a href="https://www.weforum.org/agenda/2018/12/this-drone-shrinks-to-fit" title="World Economic Forum"><span class="mobile_text"/>World Economic Forum</span></a></li>
-                    <li><a href="http://spectrum.ieee.org/automaton/robotics/drones/foldable-drone-changes-its-shape-in-mid-air" title="IEEE Spectrum"><span class="mobile_text"/>IEEE Spectrum</span></a></li>
-                    <li><a href="http://www.popularmechanics.com/flight/drones/a25562574/transforming-drone-quadcopter" title="Popular Mechanics"><span class="mobile_text"/>Popular Mechanics</span></a></li>
-                    <li><a href="http://robohub.org/a-new-drone-can-change-its-shape-to-fly-through-a-narrow-gap" title="Robohub"><span class="mobile_text"/>Robohub</span></a></li>
-                    <li><a href="http://www.slashgear.com/folding-rescue-drone-can-transform-its-shape-while-in-the-air-12557800/" title="SlashGear"><span class="mobile_text"/>SlashGear</span></a></li>
-                </ul>
-                <h4>Rapid, Dynamic Obstacle Avoidance with an Event-based Camera</h4>
-                <ul>
-                    <li><a href="http://www.bbc.com/news/av/technology-48282533/tech-gives-drone-the-ability-to-avoid-mid-air-crashes" title="BBC"><span class="mobile_text"/>BBC</a></span></li>
-                    <li><a href="http://spectrum.ieee.org/automaton/robotics/drones/event-camera-helps-drone-dodge-thrown-objects" title="IEEE Spectrum"><span class="mobile_text"/>IEEE Spectrum</span></a></li>
-                    <li><a href="https://www.theverge.com/2019/5/16/18627479/autonomous-drone-navigation-dodging-thrown-objects" title="The Verge"><span class="mobile_text"/>The Verge</a></span></li>
-                    <li><a href="https://www.foxnews.com/tech/watch-an-autonomous-drone-dodge-thrown-objects" title="Fox News"><span class="mobile_text">Fox News</a></span></li>
-                    <li><a href="https://www.businessinsider.com/autonomous-drone-dodges-soccer-ball-video-2019-5" title="Business Insider"><span class="mobile_text"/>Business Insider</span></a></li>
-                    <li><a href="https://www.pcmag.com/news/368413/watch-an-autonomous-drone-dodge-thrown-objects" title="PCMag"><span class="mobile_text"/>PCMag</span></a></li>
-                    <li><a href="https://www.digitaltrends.com/cool-tech/drone-autonomous-dodge-football/" title="Digital Trends"><span class="mobile_text">Digital Trends</a></span></li>
-                    <li><a href="https://www.cnet.com/videos/watch-this-drone-dodge-a-ball" title="CNET"><span class="mobile_text"/>CNET</span></a></li>
-                    <li><a href="https://www.techbriefs.com/component/content/article/tb/tv/34488" title="Tech Briefs"><span class="mobile_text"/>Tech Briefs</span></a></li>
-                </ul>
-                <h4>Dynamic Obstacle Avoidance for Quadrotors with Event Cameras</h4>
-                <ul>
-                    <li><a href="http://www.nature.com/articles/d41586-020-00820-z" title="Nature"><span class="mobile_text"/>Nature</a></span></li>
-                    <li><a href="http://gizmodo.com/thrown-rocks-are-no-threat-to-these-drones-that-have-ma-1842493335" title="Gizmodo"><span class="mobile_text"/>Gizmodo</span></a></li>
-                    <li><a href="http://futurism.com/the-byte/drone-dodge-careening-basketballs" title="The Verge"><span class="mobile_text"/>The Verge</a></span></li>
-                    <li><a href="http://petapixel.com/2020/03/25/this-obstacle-avoiding-drone-is-so-fast-it-can-play-dodgeball" title="Fox News"><span class="mobile_text">Fox News</a></span></li>
-                    <li><a href="http://newatlas.com/drones/drone-dodgeball-obstacle-detection-system" title="Business Insider"><span class="mobile_text"/>Business Insider</span></a></li>
-                </ul>
+    <main>
+        <div class="header-content">
+            <div class="photo-container">
+                <img src="davide_falanga.jpg" alt="Davide Falanga" class="profile-photo">
             </div>
-
-            <div id="publications">
-                <h2>Publications</h2>
-                <h3>Peer-reviewed Journal Papers</h3>
-                <ol>
-
-                    <li><div class="pub_img_div">
-                            <img src="img/quad.jpg" class="alignleft pub_img roundcorner"   alt="RAL17_Faessler"/>
-                        </div>
-                        <div class="pub_text">
-                            <p>M. Faessler, <span style="text-decoration: underline;">D. Falanga</span>, D. Scaramuzza</p>
-                            <p><strong>Thrust Mixing, Saturation, and Body-Rate Control for Accurate Aggressive Quadrotor Flight</strong></p>
-                            <p>IEEE Robotics and Automation Letters (RA-L), 2017. Accepted for oral presentation at ICRA 17.</p>
-                            <p class="pub_links"><a href="http://rpg.ifi.uzh.ch/docs/RAL17_Faessler.pdf">PDF</a><a href="https://youtu.be/6YEMxFgToyg">Video</a><a href="http://rpg.ifi.uzh.ch/docs/RAL17_Faessler.pptx">PPT</a><a href="https://github.com/uzh-rpg/rpg_quadrotor_control">Code</a><a href="bibtex/Faessler17RAL.bib">BibTex</a></p>
-                        </div>
-                        
-                    </li>
-
-                    <li>
-                        <div class="pub_img_div">
-                            <img src="img/RAL18_Kim.png" class="alignleft pub_img roundcorner"   alt="RAL18_Kim"/>
-                        </div>
-                        <div class="pub_text">
-                            <p>S. Kim, <span style="text-decoration: underline;">D. Falanga</span>, D. Scaramuzza</p>
-                            <p><strong>Computing The Forward Reachable Set for a Multirotor Under First-Order Aerodynamic Effects</strong></p>
-                            <p>IEEE Robotics and Automation Letters (RA-L), 2018. Accepted for oral presentation at IROS 18.</p>
-                            <p class="pub_links"><a href="http://rpg.ifi.uzh.ch/docs/RAL18_Kim.pdf">PDF</a><a href="bibtex/Kim18ral.bib">BibTex</a></p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="pub_img_div">
-                            <img src="img/RAL18_Falanga.png" class="alignleft pub_img roundcorner"  alt="RAL18_Falanga"/>
-                        </div>
-                        <div class="pub_text">
-                            <p><span style="text-decoration: underline;">D. Falanga</span>, K. Kleber, S. Mintchev, D. Floreano, D. Scaramuzza</p>
-                            <p><strong>The Foldable Drone: A Morphing Quadrotor that can Squeeze and Fly</strong></p>
-                            <p>IEEE Robotics and Automation Letters (RA-L), 2018. Accepted for oral presentation at ICRA 18.</p>
-                            <p class="pub_links"><a href="http://rpg.ifi.uzh.ch/docs/RAL18_Falanga.pdf">PDF</a><a href="https://www.youtube.com/watch?v=jmKXCdEbF_E">Video</a><a href="bibtex/Falanga19ral_foldable.bib">BibTex</a></p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="pub_img_div">
-                            <img src="img/ISR19_Moon.jpg" class="alignleft pub_img roundcorner"  alt="ISR19_Moon"/>
-                        </div>
-                        <div class="pub_text">
-                            <p>H. Moon, J. Martinez-Carranza, T. Cieslewski, M. Faessler, <span style="text-decoration: underline;">D. Falanga</span>, A. Simovic, D. Scaramuzza, S. Li, M. Ozo, C. De Wagter, G. de Croon, S. Hwang, S. Jung, H. Shim, H. Kim, M. Park, T. C. Au, S. J. Kim</p>
-                            <p><strong>Challenges and implemented technologies used in autonomous drone racing</strong></p>
-                            <p>Springer: Intelligent Service Robotics Series, 2019</p>
-                            <p class="pub_links"><a href="http://rpg.ifi.uzh.ch/docs/ISR19_Moon.pdf">PDF</a><a href="http://www.youtube.com/watch?v=ImQ8izGQzuk">Video</a><a href="bibtex/Moon19jist.bib">BibTex</a></p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="pub_img_div">
-                            <img src="img/RAL19_Falanga.jpg" class="alignleft pub_img roundcorner"  alt="RAL19_Falanga"/>
-                        </div>
-                        <div class="pub_text">
-                            <p><span style="text-decoration: underline;">D. Falanga</span>, S. Kim, D. Scaramuzza</p>
-                            <p><strong>How Fast is Too Fast? The Role of Perception Latency in High-Speed Sense and Avoid</strong></p>
-                            <p>IEEE Robotics and Automation Letters (RA-L), 2019.</p>
-                            <p class="pub_links"><a href="http://rpg.ifi.uzh.ch/docs/RAL19_Falanga.pdf">PDF</a><a href="https://youtu.be/sbJAi6SXOQw">Video</a><a href="bibtex/Falanga19ral_howfast.bib">BibTex</a></p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="pub_img_div">
-                            <img src="img/RSS19_Nisar.png" class="alignleft pub_img roundcorner"  alt="RSS19_Nisar"/>
-                        </div>
-                        <div class="pub_text">
-                            <p>B. Nisar, P. Foehn, <span style="text-decoration: underline;">D. Falanga</span>, D. Scaramuzza</p>
-                            <p><strong>VIMO: Simultaneous Visual Inertial Model-based Odometry and Force Estimation</strong></p>
-                            <p>IEEE Robotics and Automation Letters (RA-L), 2019. Accepted for oral presentation at RSS 19.</p>
-                            <p class="pub_links"><a href="http://rpg.ifi.uzh.ch/docs/RSS19_Nisar.pdf">PDF</a><a href="bibtex/Nisar19ral.bib">BibTex</a></p>
-                        </div>
-                    </li>
-
-
-                    <li>
-                        <div class="pub_img_div">
-                            <img src="img/Science20_Falanga.jpg" class="alignleft pub_img roundcorner"  alt="Science20_falanga"/>
-                        </div>
-                        <div class="pub_text">
-                            <p><span style="text-decoration: underline;">D. Falanga</span>, K. Kleber, D. Scaramuzza</p>
-                            <p><strong>Dynamic Obstacle Avoidance for Quadrotors with Event Cameras</strong></p>
-                            <p>Science Robotics, 2020</p>
-                            <p class="pub_links"><a href="https://robotics.sciencemag.org/content/5/40/eaaz9712.full.pdf">PDF</a><a href="https://youtu.be/BzykucxFddI">Video</a></p>
-                        </div>
-                    </li>
-                </ol>
-                <h3>Peer-reviewed Conference Papers</h3>
-                <ol>
-                    <li>
-                        <div class="pub_img_div">
-                            <img src="img/ICRA17_Falanga.jpg" class="alignleft pub_img roundcorner"  alt="ICRA17_Falanga"/>
-                        </div>
-                        <div class="pub_text">
-                            <p><span style="text-decoration: underline;">D. Falanga</span>, E. Mueggler, M. Faessler, D. Scaramuzza</p>
-                            <p><strong>Aggressive Quadrotor Flight through Narrow Gaps with Onboard Sensing and Computing using Active Vision</strong></p>
-                            <p>IEEE International Conference on Robotics and Automation (ICRA), Singapore, 2017</p>
-                            <p class="pub_links"><a href="http://rpg.ifi.uzh.ch/docs/ICRA17_Falanga.pdf">PDF</a><a href="https://www.youtube.com/watch?v=meSItatXQ7M">Video</a><a href="http://rpg.ifi.uzh.ch/docs/ICRA17_Falanga.pptm">PPT</a><a href="bibtex/Falanga17icra.bib">BibTex</a></p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="pub_img_div">
-                            <img src="img/RSS17_Foehn.jpg" class="alignleft pub_img roundcorner"   alt="RSS17_Foehn"/>
-                        </div>
-                        <div class="pub_text">
-                            <p>P. Foehn, <span style="text-decoration: underline;">D. Falanga</span>, N. Kuppuswamy, R. Tedrake, D. Scaramuzza</p>
-                            <p><strong>Fast Trajectory Optimization for Agile Quadrotor Maneuvers with a Cable-Suspended Payload</strong></p>
-                            <p>Robotics: Science and Systems (RSS), Boston, 2017 <span style="color: #ee0000;"><strong>Best Student Paper Award Finalist</strong></span></p>
-                            <p class="pub_links"><a href="http://rpg.ifi.uzh.ch/docs/RSS17_Foehn.pdf" >PDF</a><a href="https://www.youtube.com/watch?v=s9zb5MRXiHA">Video</a><a href="http://rpg.ifi.uzh.ch/docs/RSS17_Foehn.pptx">PPT</a><a href="bibtex/Foehn2017rss.bib">BibTex</a></p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="pub_img_div">
-                            <img src="img/SSRR17_Falanga.png" class="alignleft pub_img roundcorner"   alt="SSRR17_Falanga"/>
-                        </div>
-                        <div class="pub_text">
-                            <p><span style="text-decoration: underline;">D. Falanga</span>, A. Zanchettin, A. Simovic, J. Delmerico, D. Scaramuzza</p>
-                            <p><strong>Vision-based Autonomous Quadrotor Landing on a Moving Platform</strong></p>
-                            <p>IEEE/RSJ International Symposium on Safety, Security and Rescue Robotics (SSRR), Shanghai, 2017</p>
-                            <p class="pub_links"><a href="http://rpg.ifi.uzh.ch/docs/SSRR17_Falanga.pdf" >PDF</a><a href="https://youtu.be/Tz5ubwoAfNE">Video</a><a href="http://rpg.ifi.uzh.ch/docs/SSRR17_Falanga.pptx">PPT</a><a href="bibtex/Falanga17ssrr.bib">BibTex</a></p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="pub_img_div">
-                            <img src="img/uav_game.jpg" class="alignleft pub_img roundcorner"   alt="RSS18_Spica"/>
-                        </div>
-                        <div class="pub_text">
-                            <p>R. Spica, <span style="text-decoration: underline;">D. Falanga</span>, E. Cristofalo, E. Montijano, D. Scaramuzza, M. Schwager</p>
-                            <p><strong>A Game Theoretic Approach to Autonomous Two-Player Drone Racing</strong></p>
-                            <p>Robotics: Science and Systems (RSS), Pittsburgh, 2018</p>
-                            <p class="pub_links"><a href="http://rpg.ifi.uzh.ch/docs/RSS18_Spica.pdf" >PDF</a><a href="https://msl.stanford.edu/game-theoretic-planning-autonomous-drone-racing">Video</a><a href="bibtex/Spica18rss.bib">BibTex</a></p>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="pub_img_div">
-                            <img src="img/IROS18_Falanga.png" class="alignleft pub_img roundcorner"   alt="IROS18_Falanga"/>
-                        </div>
-                        <div class="pub_text">
-                            <p><span style="text-decoration: underline;">D. Falanga</span>, P. Foehn, P. Lu, D. Scaramuzza</p>
-                            <p><strong>PAMPC: Perception-Aware Model Predictive Control for Quadrotors</strong></p>
-                            <p>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), Madrid, 2018</p>
-                            <p class="pub_links"><a href="http://rpg.ifi.uzh.ch/docs/IROS18_Falanga.pdf" >PDF</a><a href="https://www.youtube.com/watch?v=9vaj829vE18">Video</a><a href="https://github.com/uzh-rpg/rpg_mpc">Code</a><a href="bibtex/Falanga18iros.bib">BibTex</a></p>
-                        </div>
-                    </li>
-                </ol>
+            <div class="text-content">
+                <h1>Davide Falanga</h1>
+                <h2>Director of Engineering, Autonomy</h2>
             </div>
-
-            <div id="videos">
-                <h2>Videos</h2>
-
-                <h3>Papers</h3>
-
-                <div class="video_row">
-                    <div class="single_video">
-                        <div class="youtube-player" data-id="BzykucxFddI"></div>
-                        <h4>Dynamic Obstacle Avoidance for Quadrotors with Event Cameras</h4>
-                    </div>
-
-                    <div class="single_video">
-                        <div class="youtube-player" data-id="sbJAi6SXOQw"></div>
-                        <h4>Rapid, Dynamic Obstacle Avoidance with an Event-based Camera</h4>
-                    </div>
-
-                    <div class="single_video">
-                        <div class="youtube-player" data-id="jmKXCdEbF_E"></div>
-                        <h4>The Foldable Drone: A Morphing Quadrotor that can Squeeze and Fly</h4>
-                    </div>
-
-                    <div class="single_video">
-                        <div class="youtube-player" data-id="meSItatXQ7M"></div>
-                        <h4>Aggressive Quadrotor Flight through Narrow Gaps with Onboard Sensing and Computing using Active Vision</h4>
-                    </div>
-
-                    <div class="single_video">
-                        <div class="youtube-player" data-id="9vaj829vE18"></div>
-                        <h4>PAMPC: Perception-Aware Model Predictive Control for Quadrotors</h4>
-                    </div>
-              
-                	<div class="single_video">
-                        <div class="youtube-player" data-id="6YEMxFgToyg"></div>
-                        <h4>Thrust Mixing, Saturation, and Body-Rate Control for Accurate Aggressive Quadrotor Flight</h4>
-                    </div>
-
-                    <div class="single_video">
-                        <div class="youtube-player" data-id="s9zb5MRXiHA"></div>
-                        <h4>Fast Trajectory Optimization for Agile Quadrotor Maneuvers with a Cable-Suspended Payload</h4>
-                    </div>
-
-                    <div class="single_video">
-                        <div class="youtube-player" data-id="Tz5ubwoAfNE"></div>
-                        <h4>Vision-based Autonomous Quadrotor Landing on a Moving Platform</h4>
-                    </div>
-           
-                    <div class="single_video">
-                        <div class="youtube-player" data-id="cJW1RysDKDg"></div>
-                        <h4>A Game Theoretic Approach to Autonomous Two-Player Drone Racing</h4>
-                    </div>
-                </div>
-
-                <h3>Competitions and Demonstrations</h3>
-                <div class="video_row">
-                    <div class="single_video">
-                        <div class="youtube-player" data-id="ImQ8izGQzuk"></div>
-                        <h4>IROS 2017 Autonomous Drone Race</h4>
-                    </div>
-
-                    <div class="single_video">
-                        <div class="youtube-player" data-id="9AvJ3-n-82w"></div>
-                        <h4>IROS 2018 Autonomous Drone Race</h4>
-                    </div>
-
-                    <div class="single_video">
-                        <div class="youtube-player" data-id="y0uUGiPL8Vo"></div>
-                        <h4>Integrative Demo of Aerial and Terrestrial Robots for Rescue Missions</h4>
-                    </div>
-                </div>
+        </div>
+        <section id="home">
+            <p>I am currently a Director of Engineering, Head of Planning & Controls at <a href="http://www.skydio.com">Skydio</a>. I received a Ph.D. in motion planning and control for Micro Aerial Vehicles, under the supervision of <a href="http://rpg.ifi.uzh.ch/people_scaramuzza.html">Prof. Davide Scaramuzza</a> at the <a href="http://rpg.ifi.uzh.ch">Robotics and Perception Group</a>, University of Zurich. During my doctoral studies, I worked at the intersection between perception and action. More specifically, I developed techniques to exploit motion planning and control to cope with the limitations of onboard sensors for high-speed flight with small-scale, lightweight, vision-based autonomous quadrotors. Check out my <a href="http://rpg.ifi.uzh.ch/docs/PhD19_Falanga.pdf">PhD thesis</a> for further details.</p>
+            <div class="social-buttons">
+                <a href="https://www.linkedin.com/in/dfalanga/" target="_blank" class="linkedin">LinkedIn</a>
+                <a href="mailto:dfalanga@gmail.com" class="email">Email</a>
+                <a href="https://scholar.google.com/citations?user=gYXvxhQAAAAJ" target="_blank" class="scholar">Publications</a>
+                <a href="https://www.youtube.com/watch?v=9vaj829vE18&list=PL5W_sZSJbo8XllViwnF4mBQ_Q31zTWrRz" target="_blank" class="videos">Videos</a>
+                <a href="resume_davide_falanga.pdf" target="_blank" class="resume">Resume</a>
             </div>
-		</div>
-    </div>
+        </section>
+    </main>
 </body>
-
 </html>
